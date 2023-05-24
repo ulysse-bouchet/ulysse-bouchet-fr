@@ -3,7 +3,7 @@
     <div class="h-20 flex items-center space-x-8">
       <a class="grow" href="/">
         <img
-          src="/img/ubonneau-transparent.png"
+          src="/img/ubonneau.svg"
           alt="Ulysse Bonneau Logo"
           class="h-6 cursor-pointer"
         />
@@ -11,6 +11,7 @@
 
       <NavLink url="/">About</NavLink>
       <NavLink url="/work">Work</NavLink>
+      <NavLink url="/work">Projects</NavLink>
       <NavLink url="/contact">Contact</NavLink>
       <div
         class="py-3 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
@@ -29,3 +30,8 @@
     <NuxtPage />
   </div>
 </template>
+<script setup lang="ts">
+useHead({
+  title: "Ulysse Bonneau",
+});
+</script>
