@@ -23,39 +23,38 @@
         </v-layer>
       </v-stage>
     </div>
-    <!-- Text -->
-    <div class="flex">
+    <!-- Bar -->
+    <div
+      id="bar-circle"
+      class="absolute left-60 bottom-[10vh] flex flex-col items-center transition-all duration-500 opacity-0"
+    >
       <div
-        id="bar-circle"
-        class="relative right-20 flex flex-col items-center transition-all duration-500 opacity-0"
+        class="h-7 w-7 flex-shrink-0 relative top-3 rounded-full bg-indigo-500"
+      ></div>
+      <div
+        class="h-[30vh] w-2 bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500"
+      ></div>
+    </div>
+    <!-- Text -->
+    <div class="pb-[10vh] pt-5 flex flex-col">
+      <span
+        id="hello"
+        class="text-[7vh] opacity-0 transition-all duration-1000"
       >
-        <div
-          class="h-7 w-7 flex-shrink-0 relative top-3 rounded-full bg-indigo-500"
-        ></div>
-        <div
-          class="h-full w-2 bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500"
-        ></div>
-      </div>
-      <div class="pb-[10vh] pt-5 flex flex-col">
-        <span
-          id="hello"
-          class="text-[7vh] opacity-0 transition-all duration-1000"
-        >
-          Welcome to
+        Welcome to
+      </span>
+      <div
+        id="ubonneau"
+        class="flex items-end opacity-0 transition-all duration-1000"
+      >
+        <img
+          src="/images/ubonneau.svg"
+          alt="Ulysse Bonneau Logo"
+          class="h-[10vh]"
+        />
+        <span id="fr" class="text-2xl transition-all opacity-0 duration-1000">
+          .fr
         </span>
-        <div
-          id="ubonneau"
-          class="flex items-end opacity-0 transition-all duration-1000"
-        >
-          <img
-            src="/images/ubonneau.svg"
-            alt="Ulysse Bonneau Logo"
-            class="h-[10vh]"
-          />
-          <span id="fr" class="text-2xl transition-all opacity-0 duration-1000">
-            .fr
-          </span>
-        </div>
       </div>
     </div>
   </div>
@@ -63,11 +62,17 @@
   <Separator color="rgb(219 39 119)"></Separator>
   <About></About>
   <Separator color="rgb(124 58 237)"></Separator>
-  <div id="career" class="h-[90vh]"></div>
+  <div id="career" class="h-[90vh]">
+    <Line color="rgb(147 51 234)" ball="hidden"></Line>
+  </div>
   <Separator color="rgb(124 58 237)"></Separator>
-  <div id="projects" class="h-[90vh]"></div>
+  <div id="projects" class="h-[90vh]">
+    <Line color="rgb(147 51 234)" ball="hidden"></Line>
+  </div>
   <Separator color="rgb(124 58 237)"></Separator>
-  <div id="contact" class="h-[90vh]"></div>
+  <div id="contact" class="h-[90vh]">
+    <Line color="rgb(147 51 234)" ball="hidden"></Line>
+  </div>
 </template>
 
 <script lang="ts">

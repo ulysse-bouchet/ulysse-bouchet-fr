@@ -1,4 +1,7 @@
-<template><div ref="separator" class="h-[5vh]"></div></template>
+<template>
+  <Line height="5vh" ball="hidden"></Line>
+  <div ref="separator" class="h-[5vh]"></div>
+</template>
 <script lang="ts">
 export default {
   props: {

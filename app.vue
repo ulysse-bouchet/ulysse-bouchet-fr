@@ -39,6 +39,7 @@
   <div class="pt-[10vh]">
     <NuxtPage />
   </div>
+  <footer class="bottom-0 bg-pink-600 h-10 w-full"></footer>
 </template>
 
 <script setup lang="ts">

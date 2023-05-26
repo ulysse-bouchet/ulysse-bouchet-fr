@@ -1,5 +1,6 @@
 <template>
-  <div id="about" class="h-[90vh] px-80 pt-[5vh] bg-purple-600">
-    <span class="text-5xl text-white font-bold">About me.</span>
+  <Line></Line>
+  <div id="about" class="h-[90vh] pt-[5vh] px-80 bg-purple-600">
+    <span class="text-[7vh] text-white font-bold"> About me </span>
   </div>
 </template>
