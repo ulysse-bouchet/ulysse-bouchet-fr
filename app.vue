@@ -1,37 +1,68 @@
 <template>
-  <header class="fixed bg-white w-full px-80">
-    <div class="h-20 flex items-center space-x-8">
-      <a class="grow" href="/">
-        <img
-          src="/img/ubonneau.svg"
-          alt="Ulysse Bonneau Logo"
-          class="h-6 cursor-pointer"
-        />
-      </a>
+  <header class="fixed bg-white w-full z-10">
+    <div class="h-[10vh] px-80 flex items-center space-x-8">
+      <img
+        src="/images/ubonneau.svg"
+        alt="Ulysse Bonneau Logo"
+        class="h-6 cursor-pointer"
+        @click="scrollToTop"
+      />
+      <div class="grow"></div>
 
-      <NavLink url="/">About</NavLink>
-      <NavLink url="/work">Work</NavLink>
-      <NavLink url="/work">Projects</NavLink>
-      <NavLink url="/contact">Contact</NavLink>
+      <NavLink url="about">About</NavLink>
+      <NavLink url="career">Career</NavLink>
+      <NavLink url="projects">Projects</NavLink>
+      <NavLink url="contact">Contact</NavLink>
       <div
         class="py-3 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
       >
         <a
           download=""
-          href="/img/ubonneau.png"
+          href="/CV - BOUCHET Ulysse.pdf"
           class="m-1 px-4 py-3 rounded-full font-medium text-lg bg-white transition-all duration-300 hover:after:-z-10 after:bg-gradient-to-r after:from-indigo-500 after:via-purple-500 after:to-pink-500 hover:bg-transparent hover:text-white"
         >
           Resume
         </a>
       </div>
     </div>
+    <div
+      id="scrollbar"
+      class="h-1 w-[0vh] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+    ></div>
   </header>
-  <div class="pt-20 px-80">
+  <div
+    class="fixed right-5 bottom-5 w-16 h-16 flex items-center justify-center border-2 border-b-4 border-white bg-purple-700 rounded-xl cursor-pointer hover:bg-purple-500"
+    @click="scrollToTop"
+  >
+    <img src="/images/up-arrow.svg" class="w-6 h-6" />
+  </div>
+  <div class="pt-[10vh]">
     <NuxtPage />
   </div>
 </template>
+
 <script setup lang="ts">
 useHead({
   title: "Ulysse Bonneau",
 });
+</script>
+
+<script lang="ts">
+export default {
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      let scrollbar = document.getElementById("scrollbar") as HTMLElement;
+      let position =
+        (window.scrollY / (document.body.clientHeight - window.innerHeight)) *
+        100;
+      scrollbar.style.width = position + "vw";
+    },
+    scrollToTop() {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    },
+  },
+};
 </script>

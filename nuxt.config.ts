@@ -12,4 +12,5 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/png", href: "/img/ub.png" }],
     },
   },
+  plugins: [{ src: "~/plugins/vue-konva", mode: "client" }],
 });

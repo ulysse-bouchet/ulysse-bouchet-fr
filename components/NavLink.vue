@@ -1,7 +1,7 @@
 <template>
   <a
-    :href="url"
-    class="group text-lg font-medium hover:text-indigo-500 transition-all duration-300"
+    class="group text-lg font-medium hover:text-indigo-500 transition-all duration-300 cursor-pointer"
+    @click="scrollTo"
   >
     <slot />
     <span
@@ -16,6 +16,17 @@ export default {
     url: {
       type: String,
       required: true,
+    },
+  },
+  methods: {
+    scrollTo() {
+      let target = document.getElementById(this.url) as HTMLElement;
+
+      window.scrollTo({
+        top: target.offsetTop - 75,
+        left: 0,
+        behavior: "smooth",
+      });
     },
   },
 };
