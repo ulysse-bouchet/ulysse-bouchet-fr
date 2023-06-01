@@ -33,7 +33,10 @@
       I like to write clean code and develop high-quality websites using various
       technologies and frameworks.
     </div>
-    <div id="quotes" class="mt-12 pb-2 flex space-x-4 w-4/5 overflow-x-scroll">
+    <div id="quotes" class="mt-12 pb-2 flex space-x-4 w-4/5 overflow-x-auto scrollbar-hide">
+      <Quote author="Augusta Tsampi" title="Class representative">
+        Ulysse is a sunny, unifying student who always sets the right mood.
+      </Quote>
       <Quote author="Mathis Da Cruz" title="Classmate">
         Without any doubt, he's the best teammate ever ! Ulysse is the GOAT, you
         can trust me.
@@ -44,8 +47,14 @@
       <Quote author="Sarankan Sivananthan" title="Classmate">
         A legendary man and a future prodigy.
       </Quote>
-      <Quote author="Augusta Tsampi" title="Class representative">
-        Ulysse is a sunny, unifying student who always sets the right mood.
+      <Quote author="Evan Arneau" title="Classmate">
+        Ulysse is the only person I would consider fit to be my rival... He's got a brain as big as Kansas.
+      </Quote>
+      <Quote author="Mariam Maksimous" title="Classmate">
+        Ulysse has a dance move I've never seen before, the "Danse de la Joie". I hope that one day I learn this move.
+      </Quote>
+      <Quote author="Stéphane Tang" title="Classmate">
+        Ulysse's curly hair is way too beautiful, I want to have the same.
       </Quote>
     </div>
   </div>
@@ -66,15 +75,15 @@ export default {
           setTimeout(() => {
             direction = -1;
             lastScroll = 0;
-          }, 1000);
+          }, 2500);
       } else if (quotes?.scrollLeft <= 1)
         setTimeout(() => {
           direction = 1;
             lastScroll = 9999;
-        }, 1000);
+        }, 2500);
 
       if (quotes?.scrollLeft) lastScroll = quotes?.scrollLeft;
-    }, 10);
+    }, 20);
   },
 };
 </script>
