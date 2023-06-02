@@ -10,7 +10,7 @@
       </div>
     </div>
     <div
-      class="w-3/4 mt-8 ml-8 py-4 pl-10 pr-5 bg-purple-200 rounded-full rounded-tl-none font-medium text-lg text-purple-900"
+      class="w-3/4 mt-8 ml-8 py-4 pl-10 pr-16 bg-purple-200 rounded-full rounded-tl-none font-medium text-lg text-purple-900 text-justify"
     >
       I am a young french engineer, currently working as an apprentice at
       <a

@@ -1,10 +1,10 @@
 <template>
   <div class="absolute left-60 flex flex-col items-center transition-all duration-500">
-    <div ref="bar" class="h-[90vh] w-2 bg-white"></div>
     <div
       ref="ball"
-      class="h-7 w-7 flex-shrink-0 relative bottom-[81.5vh] rounded-full bg-blue"
+      class="h-7 w-7 flex-shrink-0 relative top-[8.5vh] rounded-full bg-blue"
     ></div>
+    <div ref="bar" class="h-[90vh] w-2 relative -top-[3vh] bg-white"></div>
   </div>
 </template>
 

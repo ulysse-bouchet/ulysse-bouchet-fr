@@ -35,7 +35,7 @@
     class="fixed right-5 bottom-5 w-16 h-16 flex items-center justify-center border-2 border-b-4 border-white bg-purple-700 rounded-xl cursor-pointer hover:bg-purple-500"
     @click="scrollToTop"
   >
-    <img src="/images/up-arrow.svg" class="w-6 h-6" />
+    <img src="/icons/arrow-up.svg" class="w-6 h-6" />
   </div>
 
   <!-- Content -->
