@@ -51,6 +51,7 @@ export default {
       currentJob: {},
       jobs: [
         {
+          id: 1,
           company: "CEA Paris Saclay",
           icon: "cea.jpg",
           title: "Software Engineer (Apprenticeship)",
@@ -58,21 +59,46 @@ export default {
           description: `Development of Pixano, a vision and computer learning tool.`,
           tags: [
             { tag: "Svelte", link: "https://svelte.dev/" },
-            { tag: "Tailwind", link: "https://tailwindcss.com/" },
             { tag: "TypeScript", link: "https://www.typescriptlang.org/" },
+            { tag: "Tailwind", link: "https://tailwindcss.com/" },
+            { tag: "NodeJS", link: "https://nodejs.org/en" },
+            { tag: "Storybook", link: "https://storybook.js.org/" },
             { tag: "HTML", link: "https://www.w3schools.com/html/" },
             { tag: "CSS", link: "https://www.w3schools.com/Css/" },
             { tag: "Python", link: "https://www.python.org/" },
+            { tag: "FastAPI", link: "https://fastapi.tiangolo.com/" },
+            { tag: "Uvicorn", link: "https://www.uvicorn.org/" },
             { tag: "Git", link: "https://git-scm.com/" },
+            { tag: "Ubuntu", link: "https://ubuntu.com/" },
           ],
         },
         {
+          id: 2,
           company: "Hitachi Rail",
           icon: "hitachi.svg",
           title: "Software Developer (Internship)",
           date: "May - August 2021",
           description: `Creation of a tool to automate the writing of test reports.`,
-          tags: ["svelte", "js", "ts"],
+          tags: [
+            { tag: "LaTeX", link: "https://www.latex-project.org/" },
+            { tag: "Python", link: "https://www.python.org/" },
+            { tag: "Bash", link: "https://www.gnu.org/software/bash/" },
+            { tag: "Git", link: "https://git-scm.com/" },
+            { tag: "Ubuntu", link: "https://ubuntu.com/" },
+          ],
+        },
+        {
+          id: 3,
+          company: "EDF Lab Paris Saclay",
+          icon: "edf.svg",
+          title: "Software Developer (Internship)",
+          date: "May - July 2020",
+          description: `Study of Meta's AI Habitat tool to determine whether it could be integrated into EDF's tools.`,
+          tags: [
+            { tag: "Python", link: "https://www.python.org/" },
+            { tag: "Bash", link: "https://www.gnu.org/software/bash/" },
+            { tag: "Ubuntu", link: "https://ubuntu.com/" },
+          ],
         },
       ],
     };
@@ -101,15 +127,15 @@ export default {
         card.style.transitionDuration = "0ms";
         card.style.transform = "translateX(-50vw)";
 
-        const currentIndex = this.jobs.findIndex((job) => job.title === this.currentJob.title);
+        const currentIndex = this.jobs.findIndex((job) => job.id === this.currentJob.id);
         const prevIndex = currentIndex == 0 ? this.jobs.length - 1 : currentIndex - 1;
         this.currentJob = { ...this.jobs[prevIndex] };
 
         setTimeout(() => {
-          card.style.transitionDuration = "300ms";
+          card.style.transitionDuration = "200ms";
           card.style.transform = "";
-        }, 300);
-      }, 300);
+        }, 200);
+      }, 200);
     },
     goNext() {
       let card = document.getElementById("career-card") as HTMLElement;
@@ -119,7 +145,7 @@ export default {
         card.style.transitionDuration = "0ms";
         card.style.transform = "translateX(50vw)";
 
-        const currentIndex = this.jobs.findIndex((job) => job.title === this.currentJob.title);
+        const currentIndex = this.jobs.findIndex((job) => job.id === this.currentJob.id);
         const nextIndex = (currentIndex + 1) % this.jobs.length;
         this.currentJob = { ...this.jobs[nextIndex] };
 

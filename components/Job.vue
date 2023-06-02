@@ -1,10 +1,10 @@
 <template>
   <div
     id="career-card"
-    class="w-full h-full p-12 flex flex-col bg-pink-200 rounded-3xl transition-all duration-300"
+    class="w-full h-full p-12 flex flex-col bg-pink-200 rounded-3xl transition-all duration-200"
   >
     <div class="flex items-center space-x-8">
-      <img ref="icon" src="images/cea.jpg" class="h-24 w-24 rounded-xl" />
+      <img ref="icon" src="images/cea.jpg" class="h-24 w-24 rounded-xl object-contain" />
       <div class="flex flex-col grow">
         <span ref="company" class="mb-1 text-4xl font-bold text-rose-900"> </span>
         <span ref="title" class="font-medium text-lg text-pink-600"> </span>
@@ -12,7 +12,7 @@
       <span ref="date" class="text-2xl font-medium text-rose-900"> </span>
     </div>
     <span ref="description" class="mt-8 grow text-xl leading-10 text-justify"> </span>
-    <div class="flex space-x-4 self-end text-sm font-bold text-pink-400">
+    <div class="w-2/3 flex flex-wrap-reverse justify-end space-x-4 self-end text-sm font-bold text-pink-400">
       <a
         v-for="(tag, index) in tags"
         :key="index"
