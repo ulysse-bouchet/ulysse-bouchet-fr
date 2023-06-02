@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="absolute left-60 flex flex-col items-center transition-all duration-500"
-  >
+  <div class="absolute left-60 flex flex-col items-center transition-all duration-500">
     <div ref="bar" class="h-[90vh] w-2 bg-white"></div>
     <div
       ref="ball"
