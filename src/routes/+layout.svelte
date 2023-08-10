@@ -79,6 +79,6 @@
 <footer
 	class="w-full h-10 flex items-center justify-center bg-pink-600 text-pink-300 text-sm font-medium"
 >
-	v1.1.0 - Website developed by Ulysse Bonneau in 2023. All rights reserved. This website does not
+	v1.2.0 - Website developed by Ulysse Bonneau in 2023. All rights reserved. This website does not
 	use cookies.
 </footer>

@@ -2,8 +2,11 @@
 	// Imports
 	import LineBall from '$lib/components/LineBall.svelte';
 	import Job from '$lib/components/Job.svelte';
+	import School from '$lib/components/School.svelte';
 	import { jobs } from '$lib/data/jobs';
+	import { schools } from '$lib/data/schools';
 
+	let workPanelSelected = true; // Is the work or school panel selected
 	let jobIndex = 0; // Current job for navigation
 
 	/**
@@ -19,9 +22,11 @@
 		if (event.target == workBtn && !workBtn.classList.contains('active')) {
 			schoolBtn.classList.remove('active');
 			workBtn.classList.add('active');
+			workPanelSelected = true;
 		} else if (event.target == schoolBtn && !schoolBtn.classList.contains('active')) {
 			workBtn.classList.remove('active');
 			schoolBtn.classList.add('active');
+			workPanelSelected = false;
 		}
 	}
 
@@ -101,42 +106,55 @@
 				School
 			</button>
 		</div>
-		<div class="flex h-full items-center space-x-8">
-			<!-- Previous Button -->
-			<button id="prevBtn" on:click={scrollToPrev} disabled class="opacity-50">
-				<img
-					src="icons/arrow-left.svg"
-					alt="prev"
-					class="h-8 w-8 p-1 bg-pink-600 border-2 rounded-full z-10"
-				/>
-			</button>
+		{#if workPanelSelected}
+			<div class="flex h-full items-center space-x-8">
+				<!-- Previous Button -->
+				<button id="prevBtn" on:click={scrollToPrev} disabled class="opacity-50">
+					<img
+						src="icons/arrow-left.svg"
+						alt="prev"
+						class="h-8 w-8 p-1 bg-pink-600 border-2 rounded-full z-10"
+					/>
+				</button>
 
-			<!-- Jobs Carousel -->
-			<div
-				id="jobs"
-				class="h-4/5 w-5/6 mt-16 mb-8 flex flex-row items-center space-x-8 overflow-x-hidden"
-			>
-				{#each jobs as job}
-					<Job
-						icon={job.icon}
-						company={job.company}
-						title={job.title}
-						date={job.date}
-						description={job.description}
-						tags={job.tags}
+				<!-- Jobs Carousel -->
+				<div
+					id="jobs"
+					class="h-4/5 w-5/6 mt-16 mb-8 flex flex-row items-center space-x-8 overflow-x-hidden"
+				>
+					{#each jobs as job}
+						<Job
+							icon={job.icon}
+							company={job.company}
+							title={job.title}
+							date={job.date}
+							description={job.description}
+							tags={job.tags}
+						/>
+					{/each}
+				</div>
+
+				<!-- Next Button -->
+				<button class="h-fit" id="nextBtn" on:click={scrollToNext}>
+					<img
+						src="icons/arrow-right.svg"
+						alt="next"
+						class="h-8 w-8 p-1 bg-pink-600 border-2 rounded-full z-10"
+					/>
+				</button>
+			</div>
+		{:else}
+			<div class="h-full py-8 grid grid-cols-2 items-center">
+				{#each schools as school}
+					<School
+						school={school.school}
+						title={school.title}
+						date={school.date}
+						description={school.description}
 					/>
 				{/each}
 			</div>
-
-			<!-- Next Button -->
-			<button class="h-fit" id="nextBtn" on:click={scrollToNext}>
-				<img
-					src="icons/arrow-right.svg"
-					alt="next"
-					class="h-8 w-8 p-1 bg-pink-600 border-2 rounded-full z-10"
-				/>
-			</button>
-		</div>
+		{/if}
 	</div>
 </div>
 

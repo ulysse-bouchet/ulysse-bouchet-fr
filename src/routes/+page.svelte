@@ -16,7 +16,7 @@
 	<div class="absolute top-0 left-0">
 		<Canvas />
 	</div>
-	
+
 	<!-- Bar -->
 	<div id="bar-circle" class="absolute left-60 bottom-[10vh] flex flex-col items-center">
 		<div class="h-7 w-7 flex-shrink-0 relative top-3 rounded-full bg-indigo-500" />
@@ -49,6 +49,6 @@
 
 <!-- Contact Section -->
 <Separator color="rgb(124 58 237)" />
-<div id="contact" class="h-[90vh]">
+<div id="contact" class="h-[90vh] bg-[#333]">
 	<LineBall color="rgb(147 51 234)" ballVisibility="hidden" />
 </div>
