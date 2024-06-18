@@ -1,9 +1,16 @@
-<script>
-    import "../app.css";
-    import NavBar from "$lib/NavBar.svelte";
+<script lang="ts">
+	import '../app.css';
+	import NavMenu from '$lib/components/navigation/NavMenu.svelte';
+	import NavBar from '$lib/components/navigation/NavBar.svelte';
+	import { isMenuOpened } from '$lib/components/navigation/navigation';
 </script>
 
 <div class="min-h-screen min-w-screen bg-background">
-    <NavBar />
-    <slot />
+	{#if $isMenuOpened}
+		<NavMenu />
+	{:else}
+		<NavBar />
+		<div class="min-h-screen min-w-screen bg-background" />
+		<slot />
+	{/if}
 </div>
