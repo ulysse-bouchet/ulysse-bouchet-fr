@@ -16,7 +16,7 @@
 		Je suis un jeune ingénieur en informatique, spécialisé dans le développement web.
 		Fraîchement diplômé par l'Efrei Paris, je suis maintenant à la recherche d'un emploi dans ce domaine qui me
 		passionne. <br> <br>
-		J'ai pu acquérir de nombreuses compétences grâce à plusieurs stages, mais surtout grâce à ma
+		J'ai pu acquérir de nombreuses compétences grâce à plusieurs stages, mais surtout à l'issue de ma
 		formation par apprentissage au CEA Paris-Saclay. <br> <br>
 		Pour en savoir plus à mon sujet, je vous invite à continuer votre visite en scrollant plus bas !
 	</div>
