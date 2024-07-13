@@ -4,8 +4,8 @@
 	let scrolled: number = 0;
 
 	const getScrollDistance = (): number => {
-		const scrollTop = document.documentElement.scrollTop;
-		const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		const scrollTop = document.body.scrollTop;
+		const scrollHeight = document.body.scrollHeight - document.body.clientHeight;
 
 		if (scrollHeight === 0)
 			return 0;
