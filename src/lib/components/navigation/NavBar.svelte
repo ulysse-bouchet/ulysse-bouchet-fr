@@ -26,8 +26,8 @@
 	});
 </script>
 
-<div class="fixed bottom-20 h-[3px] w-0 bg-gradient-to-r from-primary via-secondary to-accent" id="scrollbar"></div>
-<nav class="fixed bottom-0 h-20 w-full px-6 flex items-center bg-background">
+<div class="sticky bottom-20 h-[3px] w-0 bg-gradient-to-r from-primary via-secondary to-accent" id="scrollbar"></div>
+<nav class="sticky bottom-0 h-20 w-full px-6 flex items-center bg-background">
 	<span
 		class="font-heading uppercase font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
 		À propos
