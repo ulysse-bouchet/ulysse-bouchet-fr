@@ -6,9 +6,9 @@ export default {
       colors: {
         'text': '#0e0c0d',
         'background': '#f7f5f6',
-        'primary': '#FF90BC',
-        'secondary': '#FFC0D9',
-        'accent': '#ba8a9e',
+        'primary': '#6366f1',
+        'secondary': '#a855f7',
+        'accent': '#ec4899',
       },
       fontSize: {
         sm: '0.750rem',
