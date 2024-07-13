@@ -1,6 +1,6 @@
 {
 	"name": "ulysse-bonneau",
-	"version": "2.3.7",
+	"version": "2.4.1",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
@@ -17,6 +17,7 @@
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
 		"@types/eslint": "^8.56.10",
 		"autoprefixer": "^10.4.19",
+		"daisyui": "^4.12.10",
 		"eslint": "^9.5.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.40.0",

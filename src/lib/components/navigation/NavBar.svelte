@@ -23,6 +23,7 @@
 
 	onMount(() => {
 		window.addEventListener('scroll', handleScroll);
+		handleScroll();
 	});
 </script>
 

@@ -1,6 +1,6 @@
-<div class="min-h-screen min-w-screen p-6 bg-background">
+<div class="min-h-screen min-w-screen bg-background p-6">
 	<img
-		alt="Ulysse Bouchet" src=""
+		alt="Ulysse Bouchet" src="kaisa.png"
 		class="w-full aspect-square rounded-lg
 		border-4 border-t-primary border-l-primary border-b-accent border-r-accent">
 
