@@ -1,7 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import SVG from '$lib/SVG.svelte';
-	import { menu, primary } from '$lib/svg_utils';
 
 	const getScrollDistance = (): number => {
 		const scrollTop = document.documentElement.scrollTop;
@@ -29,9 +27,9 @@
 </script>
 
 <div class="sticky bottom-20 h-[3px] w-0 bg-gradient-to-r from-primary via-secondary to-accent" id="scrollbar"></div>
-<nav class="sticky bottom-0 h-20 px-6 flex items-center">
+<nav class="sticky bottom-0 h-20 px-6 flex items-center bg-background">
 	<span
 		class="font-heading uppercase font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
-		Ulysse Bouchet
+		À propos
 	</span>
 </nav>
