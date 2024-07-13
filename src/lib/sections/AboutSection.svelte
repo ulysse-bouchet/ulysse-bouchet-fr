@@ -1,8 +1,8 @@
 <div class="min-h-screen min-w-screen p-6 bg-background">
 	<img
+		alt="Ulysse Bouchet" src=""
 		class="w-full aspect-square rounded-lg
-		border-4 border-t-primary border-l-primary border-b-accent border-r-accent"
-		alt="Ulysse Bouchet">
+		border-4 border-t-primary border-l-primary border-b-accent border-r-accent">
 
 	<!-- Infos -->
 	<div class="my-4 text-lg flex items-center justify-between">
