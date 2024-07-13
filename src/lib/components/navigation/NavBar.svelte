@@ -4,13 +4,13 @@
 	let scrolled: number = 0;
 
 	const getScrollDistance = (): number => {
-		const scrollTop = document.body.scrollTop;
-		const scrollHeight = document.body.scrollHeight - document.body.clientHeight;
+		const scrolledDistance = window.scrollY;
+		const scrollableHeight = document.body.scrollHeight - window.innerHeight;
 
-		if (scrollHeight === 0)
+		if (scrollableHeight === 0)
 			return 0;
 
-		const scrollPercentage = Math.round((scrollTop / scrollHeight) * 100);
+		const scrollPercentage = Math.round((scrolledDistance / scrollableHeight) * 100);
 
 		return Math.min(Math.max(scrollPercentage, 0), 100);
 	};
