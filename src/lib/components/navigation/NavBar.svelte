@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	let scrolled: number = 0;
-
 	const getScrollDistance = (): number => {
 		const scrolledDistance = window.scrollY;
 		const scrollableHeight = document.body.scrollHeight - window.innerHeight;
@@ -20,7 +18,6 @@
 	 */
 	const handleScroll = () => {
 		let scrollbar = document.getElementById('scrollbar') as HTMLElement;
-		scrolled = getScrollDistance();
 		scrollbar.style.width = getScrollDistance() + 'vw'; // Set new scrollbar width
 	};
 
@@ -30,9 +27,9 @@
 </script>
 
 <div class="sticky bottom-20 h-[3px] w-0 bg-gradient-to-r from-primary via-secondary to-accent" id="scrollbar"></div>
-<nav class="sticky bottom-0 h-20 w-full px-6 flex items-center bg-background">
+<nav class="sticky bottom-0 h-20 w-full px-6 flex items-center bg-background border-t">
 	<span
 		class="font-heading uppercase font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
-		À propos {scrolled}
+		À propos
 	</span>
 </nav>
