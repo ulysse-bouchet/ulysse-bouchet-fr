@@ -1,4 +1,8 @@
-<div class="min-h-screen min-w-screen bg-background p-6">
+<script>
+	import Canvas from '$lib/sections/about/Canvas.svelte';
+</script>
+
+<div id="about" class="relative min-h-screen min-w-screen bg-transparent z-10">
 	<div class="flex flex-col">
 		<img
 			alt="Ulysse Bouchet" src="ulysse.jpg"
@@ -16,7 +20,10 @@
 	</div>
 
 	<!-- Description -->
-	<div class="mt-6 text-justify">
+	<div class="px-6 pb-6 text-justify relative">
+		<div class="py-6 flex items-center">
+			<Canvas />
+		</div>
 		Bonjour, et bienvenue sur mon site ! <br> <br>
 		Je suis un jeune ingénieur en informatique, spécialisé dans le développement web.
 		Fraîchement diplômé par l'Efrei Paris, je suis maintenant à la recherche d'un emploi dans ce domaine qui me

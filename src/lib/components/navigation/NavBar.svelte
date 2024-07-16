@@ -28,7 +28,7 @@
 </script>
 
 <!-- Only scrollbar, fixed to the top -->
-<div class="fixed top-0 h-2 w-0 bg-gradient-to-r from-primary via-secondary to-accent" id="scrollbar"></div>
+<div class="fixed top-0 h-2 w-0 bg-gradient-to-r from-primary via-secondary to-accent z-10" id="scrollbar"></div>
 
 <!-- Scrollbar with division name, fixed to the bottom -->
 <!--<nav class="sticky bottom-0 h-20 w-full flex flex-col justify-center bg-background">
