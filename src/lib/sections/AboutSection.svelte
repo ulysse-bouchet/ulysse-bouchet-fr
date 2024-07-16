@@ -7,8 +7,8 @@
 
 		<!-- Infos -->
 		<div class="flex items-center uppercase text-background font-bold -translate-y-1">
-			<span class="px-4 pt-[10px] pb-2 bg-primary grow">Ulysse Bouchet</span>
-			<span class="px-4 pt-[10px] pb-2 bg-secondary">23 ans</span>
+			<span class="px-4 py-2 bg-primary grow">Ulysse Bouchet</span>
+			<span class="px-4 py-2 bg-secondary">23 ans</span>
 		</div>
 	</div>
 
