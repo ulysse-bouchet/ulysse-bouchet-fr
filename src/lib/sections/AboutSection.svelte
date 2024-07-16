@@ -1,17 +1,19 @@
 <div class="min-h-screen min-w-screen bg-background p-6">
-	<img
-		alt="Ulysse Bouchet" src="ulysse.jpg"
-		class="w-full aspect-square object-cover rounded-lg
-		border-4 border-t-primary border-l-primary border-b-secondary border-r-secondary">
+	<div class="flex flex-col">
+		<img
+			alt="Ulysse Bouchet" src="ulysse.jpg"
+			class="grow w-full aspect-square object-cover
+		border-4 border-t-primary border-l-primary border-r-secondary">
 
-	<!-- Infos -->
-	<div class="my-4 text-lg flex items-center justify-between">
-		<span class="uppercase text-xl font-semibold text-primary">Ulysse Bouchet</span>
-		<span class="text-lg font-semibold text-secondary">23 ans</span>
+		<!-- Infos -->
+		<div class="flex items-center uppercase text-background font-bold -translate-y-1">
+			<span class="px-4 pt-[10px] pb-2 bg-primary grow">Ulysse Bouchet</span>
+			<span class="px-4 pt-[10px] pb-2 bg-secondary">23 ans</span>
+		</div>
 	</div>
 
 	<!-- Description -->
-	<div class="text-justify">
+	<div class="mt-6 text-justify">
 		Bonjour, et bienvenue sur mon site ! <br> <br>
 		Je suis un jeune ingénieur en informatique, spécialisé dans le développement web.
 		Fraîchement diplômé par l'Efrei Paris, je suis maintenant à la recherche d'un emploi dans ce domaine qui me
