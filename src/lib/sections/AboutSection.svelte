@@ -1,13 +1,13 @@
 <div class="min-h-screen min-w-screen bg-background p-6">
 	<img
-		alt="Ulysse Bouchet" src="kaisa.png"
-		class="w-full aspect-square rounded-lg
-		border-4 border-t-primary border-l-primary border-b-accent border-r-accent">
+		alt="Ulysse Bouchet" src="ulysse.jpg"
+		class="w-full aspect-square object-cover rounded-lg
+		border-4 border-t-primary border-l-primary border-b-secondary border-r-secondary">
 
 	<!-- Infos -->
 	<div class="my-4 text-lg flex items-center justify-between">
 		<span class="uppercase text-xl font-semibold text-primary">Ulysse Bouchet</span>
-		<span class="text-lg font-semibold text-accent">23 ans</span>
+		<span class="text-lg font-semibold text-secondary">23 ans</span>
 	</div>
 
 	<!-- Description -->

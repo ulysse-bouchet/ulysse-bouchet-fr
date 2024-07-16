@@ -4,12 +4,12 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'text': '#0e0c0d',
-				'background': '#f7f5f6',
-				'primary': '#6366f1',
-				'primary-background': '#d3d6ff',
-				'secondary': '#a855f7',
-				'accent': '#ec4899'
+				'text': '#363524',
+				'background': '#F6EFEB',
+				'primary': '#0E9594',
+				'primary-background': '#BFDADA',
+				'secondary': '#6D466B',
+				'accent': '#EE6055'
 			},
 			fontSize: {
 				sm: '0.875rem',

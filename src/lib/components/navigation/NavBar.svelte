@@ -27,10 +27,14 @@
 	});
 </script>
 
-<div class="sticky bottom-20 h-[3px] w-0 bg-gradient-to-r from-primary via-secondary to-accent" id="scrollbar"></div>
-<nav class="sticky bottom-0 h-20 w-full px-6 flex items-center bg-background border-t">
+<!-- Only scrollbar, fixed to the top -->
+<div class="fixed top-0 h-2 w-0 bg-gradient-to-r from-primary via-secondary to-accent" id="scrollbar"></div>
+
+<!-- Scrollbar with division name, fixed to the bottom -->
+<!--<nav class="sticky bottom-0 h-20 w-full flex flex-col justify-center bg-background">
+	<div class="absolute bottom-full h-[3px] w-0 bg-gradient-to-r from-primary via-secondary to-accent" id="scrollbar"></div>
 	<span
-		class="font-heading uppercase font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
+		class="px-6 font-heading uppercase font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
 		À propos
 	</span>
-</nav>
+</nav>-->
