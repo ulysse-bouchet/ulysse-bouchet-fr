@@ -7,9 +7,12 @@
 
 		<!-- Infos -->
 		<div class="flex items-center uppercase text-background font-bold -translate-y-1">
-			<span class="px-4 py-2 bg-primary grow">Ulysse Bouchet</span>
-			<span class="px-4 py-2 bg-secondary">23 ans</span>
+			<span class="grow px-4 py-2 bg-primary text-background">Ulysse Bouchet</span>
+			<span class="px-4 py-2 bg-secondary text-background">23 ans</span>
 		</div>
+		<span class="px-4 py-2 -translate-y-1 bg-accent text-background uppercase font-bold">
+			Développeur web
+		</span>
 	</div>
 
 	<!-- Description -->
