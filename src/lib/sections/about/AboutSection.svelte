@@ -10,17 +10,17 @@
 		border-4 border-t-primary border-l-primary border-r-secondary">
 
 		<!-- Infos -->
-		<div class="flex items-center uppercase text-background font-bold -translate-y-1">
-			<span class="grow px-4 py-2 bg-primary text-background">Ulysse Bouchet</span>
-			<span class="px-4 py-2 bg-secondary text-background">23 ans</span>
+		<div class="flex items-center uppercase text-lg text-background font-bold -translate-y-1">
+			<span class="grow px-6 py-2 bg-primary">Ulysse Bouchet</span>
+			<span class="px-6 py-2 bg-secondary">23 ans</span>
 		</div>
-		<span class="px-4 py-2 -translate-y-1 bg-accent text-background uppercase font-bold">
+		<span class="px-6 py-2 -translate-y-1 bg-accent text-background uppercase font-bold">
 			Développeur web
 		</span>
 	</div>
 
 	<!-- Description -->
-	<div class="px-6 pb-6 text-justify relative">
+	<div class="px-6 pb-6 text-justify relative text-base">
 		<div class="py-6 flex items-center">
 			<Canvas />
 		</div>
