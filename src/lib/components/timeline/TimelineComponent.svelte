@@ -41,3 +41,10 @@
 		<hr class="bg-{color}" />
 	{/if}
 </li>
+
+<!--
+/!\ HACK TO FORCE TAILWIND TO PARSE THESE CLASSES :
+fill-primary
+fill-secondary
+fill-accent
+-->
