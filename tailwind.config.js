@@ -9,7 +9,8 @@ export default {
 				'primary': '#0E9594',
 				'primary-background': '#BFDADA',
 				'secondary': '#6D466B',
-				'accent': '#EE6055'
+				'accent': '#EE6055',
+				'accent-background': '#FFCABF'
 			},
 			fontSize: {
 				sm: '0.875rem',
@@ -42,7 +43,7 @@ export default {
 					/*'accent-content': '#130208',*/
 					/*'neutral': '#ff00ff',*/
 					/*'neutral-content': '#160016',*/
-					'base-100': '#f7f5f6',
+					'base-100': '#f7f5f6'
 					/*'base-200': '#d7d5d6',*/
 					/*'base-300': '#b7b6b7',*/
 					/*'base-content': '#0e0c0d',*/
