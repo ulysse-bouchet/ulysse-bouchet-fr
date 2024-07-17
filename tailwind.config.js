@@ -9,6 +9,7 @@ export default {
 				'primary': '#0E9594',
 				'primary-background': '#BFDADA',
 				'secondary': '#6D466B',
+				'secondary-background': '#CAAACF',
 				'accent': '#EE6055',
 				'accent-background': '#FFCABF'
 			},
