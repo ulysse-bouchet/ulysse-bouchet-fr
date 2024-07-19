@@ -77,10 +77,11 @@ export const school: TimelineElement[] = [
 		time: '2018 - 2020',
 		title: 'I.U.T. Paris Descartes',
 		subtitle: 'Institut Universitaire de Technologie',
-		description: 'The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. ' +
-			'It played a pivotal role in establishing desktop publishing as a general office function. ' +
-			'The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; ' +
-			'it came with a keyboard and single-button mouse.'
+		description: 'Mes années à l\'IUT sont celles qui ont réellement forgé le développeur que je suis devenu. ' +
+			'J\'ai pu découvrir de nombreux aspects de l\'informatique à travers des cours et des projets variés : ' +
+			'développement web, logiciel et mobile, gestion de bases de données, systèmes et réseaux. ' +
+			'De plus, j\'ai pu assister à quelques cours de mathématiques, d\'économie et de droit. ' +
+			'J\'ai fini ma formation avec une moyenne supérieure à 16/20, ce qui m\'a permis de me hisser à la 3ème place de ma promo (~180 élèves initialement).'
 	}
 ];
 

@@ -3,10 +3,10 @@
 	import Timeline from '$lib/components/timeline/Timeline.svelte';
 </script>
 
-<div class="min-h-screen min-w-screen bg-background p-6">
+<div id="school" class="min-h-screen min-w-screen bg-background p-6">
 	<span
 		class="font-heading uppercase font-bold text-xl text-accent">
-		Carrière
+		Formation
 	</span>
 	<Timeline data={school} color="accent" />
 	<div class="flex justify-center">
