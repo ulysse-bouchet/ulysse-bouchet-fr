@@ -22,5 +22,8 @@
 </script>
 
 <button id="goTopButton" on:click={goToTop} class="fixed bottom-8 right-4 bg-secondary border-2 border-background z-10">
-	<img src="arrow_top.svg" alt="Une flèche pointant vers le haut de la page" class="h-12 p-2 border-2 border-text" />
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+			 class="h-12 w-12 p-2 fill-background border-2 border-text">
+		<path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+	</svg>
 </button>

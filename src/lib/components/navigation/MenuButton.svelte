@@ -13,11 +13,17 @@
 </script>
 
 <div class="fixed top-4 right-4 flex flex-col items-end z-20">
-	<button id="menuButton" on:click={toggleMenu} class="bg-primary h-12 w-12 border-2 border-background">
+	<button id="menuButton" on:click={toggleMenu} class="bg-primary border-2 border-background">
 		{#if menuOpened}
-			<img src="close.svg" alt="Un menu 'burger'" class="p-2 border-2 border-text" />
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+					 class="h-12 w-12 p-2 fill-background border-2 border-text">
+				<path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+			</svg>
 		{:else}
-			<img src="burger_menu.svg" alt="Un menu 'burger'" class="p-2 border-2 border-text" />
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+					 class="h-12 w-12 p-2 fill-background border-2 border-text">
+				<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+			</svg>
 		{/if}
 	</button>
 	{#if menuOpened}
