@@ -22,7 +22,7 @@
 	</button>
 	{#if menuOpened}
 		<div class="bg-primary-background border-2 border-background font-semibold -translate-y-0.5 -z-10">
-			<div id="menuList" class="border-2 border-text pr-2 pl-4 py-2 flex flex-col items-end space-y-2">
+			<div id="menuList" class="border-2 border-text pr-3 pl-6 py-3 flex flex-col items-end space-y-3">
 				<button on:click={() => { goTo('about') }}>
 					À propos
 				</button>
@@ -39,6 +39,6 @@
 
 <style>
     #menuList > button {
-        @apply uppercase text-sm;
+        @apply uppercase;
     }
 </style>
