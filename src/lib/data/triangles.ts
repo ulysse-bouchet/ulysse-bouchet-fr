@@ -1,5 +1,16 @@
+type Triangle = {
+	x: number;
+	y: number;
+	sides: number;
+	radius: number;
+	fill?: string;
+	stroke: string;
+	strokeWidth: number;
+	rotation: number;
+}
+
 // Array containing the triangles attributes
-export const triangles = [
+export const triangles: Triangle[] = [
 	{
 		x: 0.5,
 		y: 0.1,
@@ -14,7 +25,7 @@ export const triangles = [
 		y: 0.35,
 		sides: 3,
 		radius: 0.10,
-		stroke: '#6D466B',
+		stroke: '#773686',
 		strokeWidth: 4,
 		rotation: 75
 	},

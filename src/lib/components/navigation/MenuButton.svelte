@@ -38,6 +38,9 @@
 				<button on:click={() => { goTo('school') }}>
 					Formation
 				</button>
+				<button on:click={() => { goTo('projects') }}>
+					Projets
+				</button>
 			</div>
 		</div>
 	{/if}
