@@ -61,7 +61,7 @@ export const triangles: Triangle[] = [
 		y: 0.89,
 		sides: 3,
 		radius: 0.05,
-		stroke: '#6D466B',
+		stroke: '#773686',
 		strokeWidth: 4,
 		rotation: 150
 	},
@@ -70,7 +70,7 @@ export const triangles: Triangle[] = [
 		y: 0.15,
 		sides: 3,
 		radius: 0.10,
-		stroke: '#6D466B',
+		stroke: '#773686',
 		strokeWidth: 4,
 		rotation: 0
 	},
@@ -88,7 +88,7 @@ export const triangles: Triangle[] = [
 		y: 0.65,
 		sides: 3,
 		radius: 0.10,
-		stroke: '#6D466B',
+		stroke: '#773686',
 		strokeWidth: 4,
 		rotation: 45
 	},
@@ -106,7 +106,7 @@ export const triangles: Triangle[] = [
 		y: 0.33,
 		sides: 3,
 		radius: 0.15,
-		stroke: '#6D466B',
+		stroke: '#773686',
 		strokeWidth: 4,
 		rotation: 70
 	}
