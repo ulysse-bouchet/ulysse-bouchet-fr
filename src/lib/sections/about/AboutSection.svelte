@@ -11,12 +11,19 @@
 
 		<!-- Infos -->
 		<div class="flex items-center uppercase text-lg text-background font-bold -translate-y-1">
-			<span class="grow px-6 py-2 bg-primary">Ulysse Bouchet</span>
-			<span class="px-6 py-2 bg-secondary">23 ans</span>
+			<span class="grow w-2/3 pl-6 py-2 bg-primary">Ulysse Bouchet</span>
+			<span class="w-1/3 py-2 text-center bg-secondary">23 ans</span>
 		</div>
-		<span class="px-6 py-2 -translate-y-1 bg-accent text-background uppercase font-bold">
-			Développeur web
-		</span>
+		<div class="py-2 flex items-center uppercase text-background bg-accent font-bold -translate-y-1">
+			<span class="grow w-2/3 pl-6">Développeur Web</span>
+			<span class="w-1/3 flex justify-center items-center space-x-1 text-xs">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="fill-background h-4 w-4">
+					<path
+						d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+				</svg>
+				<span>Paris - 92</span>
+			</span>
+		</div>
 	</div>
 
 	<!-- Description -->
