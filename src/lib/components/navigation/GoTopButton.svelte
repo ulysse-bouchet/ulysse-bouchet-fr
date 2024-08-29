@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { getScrollDistance } from './navigation';
 
 	const goToTop = () => {
 		window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -9,9 +10,9 @@
 		const goTopButton = document.getElementById('goTopButton');
 		if (!goTopButton) return;
 
-		if (window.scrollY < 50) {
+		if (getScrollDistance() < 7.5) {
 			goTopButton.style.visibility = 'hidden';
-		} else if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+		} else if (getScrollDistance() === 100) {
 			goTopButton.classList.add('bg-transparent', 'shadow-none', 'text-background');
 			goTopButton.style.visibility = 'visible';
 		} else {
