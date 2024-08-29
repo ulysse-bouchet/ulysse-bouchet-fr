@@ -47,4 +47,8 @@
 fill-primary
 fill-secondary
 fill-accent
+
+bg-primary
+bg-secondary
+bg-accent
 -->
