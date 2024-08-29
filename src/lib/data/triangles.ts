@@ -17,7 +17,7 @@ export const triangles: Triangle[] = [
 		sides: 3,
 		radius: 0.05,
 		stroke: '#0E9594',
-		strokeWidth: 4,
+		strokeWidth: 3,
 		rotation: 45
 	},
 	{
@@ -26,7 +26,7 @@ export const triangles: Triangle[] = [
 		sides: 3,
 		radius: 0.10,
 		stroke: '#773686',
-		strokeWidth: 4,
+		strokeWidth: 3,
 		rotation: 75
 	},
 	{
@@ -35,7 +35,7 @@ export const triangles: Triangle[] = [
 		sides: 3,
 		radius: 0.15,
 		stroke: '#EE6055',
-		strokeWidth: 4,
+		strokeWidth: 3,
 		rotation: 105
 	},
 	{
@@ -44,7 +44,7 @@ export const triangles: Triangle[] = [
 		sides: 3,
 		radius: 0.15,
 		stroke: '#0E9594',
-		strokeWidth: 4,
+		strokeWidth: 3,
 		rotation: 105
 	},
 	{
@@ -53,7 +53,7 @@ export const triangles: Triangle[] = [
 		sides: 3,
 		radius: 0.05,
 		stroke: '#EE6055',
-		strokeWidth: 4,
+		strokeWidth: 3,
 		rotation: 105
 	},
 	{
@@ -62,7 +62,7 @@ export const triangles: Triangle[] = [
 		sides: 3,
 		radius: 0.05,
 		stroke: '#773686',
-		strokeWidth: 4,
+		strokeWidth: 3,
 		rotation: 150
 	},
 	{
@@ -71,7 +71,7 @@ export const triangles: Triangle[] = [
 		sides: 3,
 		radius: 0.10,
 		stroke: '#773686',
-		strokeWidth: 4,
+		strokeWidth: 3,
 		rotation: 0
 	},
 	{
@@ -80,7 +80,7 @@ export const triangles: Triangle[] = [
 		sides: 3,
 		radius: 0.10,
 		stroke: '#0E9594',
-		strokeWidth: 4,
+		strokeWidth: 3,
 		rotation: 45
 	},
 	{
@@ -89,7 +89,7 @@ export const triangles: Triangle[] = [
 		sides: 3,
 		radius: 0.10,
 		stroke: '#773686',
-		strokeWidth: 4,
+		strokeWidth: 3,
 		rotation: 45
 	},
 	{
@@ -98,7 +98,7 @@ export const triangles: Triangle[] = [
 		sides: 3,
 		radius: 0.10,
 		stroke: '#EE6055',
-		strokeWidth: 4,
+		strokeWidth: 3,
 		rotation: 105
 	},
 	{
@@ -107,7 +107,7 @@ export const triangles: Triangle[] = [
 		sides: 3,
 		radius: 0.15,
 		stroke: '#773686',
-		strokeWidth: 4,
+		strokeWidth: 3,
 		rotation: 70
 	}
 ];

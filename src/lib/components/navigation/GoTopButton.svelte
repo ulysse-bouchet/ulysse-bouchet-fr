@@ -10,7 +10,8 @@
 		const goTopButton = document.getElementById('goTopButton');
 		if (!goTopButton) return;
 
-		if (getScrollDistance() < 7.5) {
+		if (getScrollDistance() < 10) {
+			// No need for the button to appear if the user has barely even scrolled the page
 			goTopButton.style.visibility = 'hidden';
 		} else if (getScrollDistance() === 100) {
 			goTopButton.classList.add('bg-transparent', 'shadow-none', 'text-background');

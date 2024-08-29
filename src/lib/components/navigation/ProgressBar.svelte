@@ -1,17 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-
-	const getScrollDistance = (): number => {
-		const scrolledDistance = window.scrollY;
-		const scrollableHeight = document.body.scrollHeight - window.innerHeight;
-
-		if (scrollableHeight === 0)
-			return 0;
-
-		const scrollPercentage = Math.round((scrolledDistance / scrollableHeight) * 100);
-
-		return Math.min(Math.max(scrollPercentage, 0), 100);
-	};
+	import { getScrollDistance } from './navigation';
 
 	/**
 	 * Function to handle the custom scrollbar.
@@ -28,7 +17,10 @@
 </script>
 
 <!-- Only scrollbar, fixed to the top -->
-<div class="fixed top-0 h-2 w-0 bg-gradient-to-r from-primary via-secondary to-accent z-20" id="scrollbar"></div>
+<div
+	class="fixed top-0 h-1 w-0 bg-gradient-to-r from-primary via-secondary to-accent z-20"
+	id="scrollbar"
+></div>
 
 <!-- Scrollbar with division name, fixed to the bottom -->
 <!--<nav class="sticky bottom-0 h-20 w-full flex flex-col justify-center bg-background">

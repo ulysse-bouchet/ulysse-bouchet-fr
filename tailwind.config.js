@@ -4,13 +4,13 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'text': '#363524',
-				'background': '#F6EFEB',
-				'primary': '#0E9594',
+				text: '#363524',
+				background: '#F6EFEB',
+				primary: '#0E9594',
 				'primary-background': '#BFDADA',
-				'secondary': '#773686',
+				secondary: '#773686',
 				'secondary-background': '#CAAACF',
-				'accent': '#EE6055',
+				accent: '#EE6055',
 				'accent-background': '#FFCABF'
 			},
 			fontSize: {
@@ -24,7 +24,7 @@ export default {
 			},
 			fontFamily: {
 				heading: 'Inter',
-				body: 'Inter'
+				body: 'Inter',
 			},
 			fontWeight: {
 				normal: '400',
@@ -36,11 +36,11 @@ export default {
 		themes: [
 			{
 				mytheme: {
-					'primary': '#6366f1',
+					primary: '#6366f1',
 					/*'primary-content': '#030414',*/
-					'secondary': '#a855f7',
+					secondary: '#a855f7',
 					/*'secondary-content': '#0a0215',*/
-					'accent': '#ec4899',
+					accent: '#ec4899',
 					/*'accent-content': '#130208',*/
 					/*'neutral': '#ff00ff',*/
 					/*'neutral-content': '#160016',*/
@@ -60,8 +60,5 @@ export default {
 			}
 		]
 	},
-	plugins: [
-		require('daisyui')
-	]
+	plugins: [require('daisyui')]
 };
-
