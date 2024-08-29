@@ -13,8 +13,8 @@
 
 		<!-- Infos -->
 		<div class="mt-6 flex flex-col items-center">
-			<span class="text-primary text-lg font-semibold uppercase">Ulysse Bouchet</span>
-			<span class="text-secondary text-sm font-medium uppercase">23 ans - Paris/92</span>
+			<span class="text-primary text-xl font-medium uppercase">Ulysse Bouchet</span>
+			<span class="text-secondary text-base font-medium uppercase">23 ans - Paris/92</span>
 		</div>
 		<!-- <div class="py-2 flex items-center text-accent bg-background font-medium -translate-y-1">
 			<span class="grow w-2/3 pl-6">Développeur Web</span>

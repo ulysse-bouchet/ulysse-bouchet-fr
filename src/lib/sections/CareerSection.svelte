@@ -5,7 +5,7 @@
 
 <div id="career" class="min-h-screen min-w-screen bg-primary-background p-6">
 	<span
-		class="font-heading uppercase font-bold text-xl text-primary">
+		class="font-heading font-medium text-xl text-primary">
 		Carrière
 	</span>
 	<Timeline data={career} color="primary" />

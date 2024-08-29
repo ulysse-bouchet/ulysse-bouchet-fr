@@ -5,7 +5,7 @@
 
 <div id="school" class="min-h-screen min-w-screen bg-background p-6">
 	<span
-		class="font-heading uppercase font-bold text-xl text-accent">
+		class="font-heading font-medium text-xl text-accent">
 		Formation
 	</span>
 	<Timeline data={school} color="accent" />
