@@ -6,7 +6,7 @@
 	import MenuButton from '$lib/components/navigation/MenuButton.svelte';
 </script>
 
-<div class="min-h-screen min-w-screen bg-dark-background font-body text-base text-text">
+<div class="min-h-screen min-w-screen bg-background font-body text-base text-text">
 	<ProgressBar />
 	<MenuButton />
 	<slot />
