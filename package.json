@@ -1,6 +1,6 @@
 {
 	"name": "ulysse-bonneau",
-	"version": "2.14.3",
+	"version": "2.15.1",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",

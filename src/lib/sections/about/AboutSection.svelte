@@ -2,7 +2,7 @@
 	import Canvas from '$lib/sections/about/Canvas.svelte';
 </script>
 
-<div id="about" class="relative min-h-screen min-w-screen bg-transparent z-10">
+<div id="about" class="relative min-h-screen min-w-screen bg-background rounded-b-3xl shadow-xl z-50">
 	<div class="flex flex-col items-center">
 		<img
 			alt="Ulysse Bouchet"
@@ -12,30 +12,15 @@
 		/>
 
 		<!-- Infos -->
-		<div class="mt-6 flex flex-col items-center">
-			<span class="text-primary text-xl font-medium uppercase">Ulysse Bouchet</span>
-			<span class="text-secondary text-base font-medium uppercase">23 ans - Paris/92</span>
+		<div class="mt-4 flex flex-col items-center">
+			<span class="text-primary text-xl font-medium">Ulysse Bouchet</span>
+			<span class="text-secondary text-base font-medium">23 ans - Paris/92</span>
 		</div>
-		<!-- <div class="py-2 flex items-center text-accent bg-background font-medium -translate-y-1">
-			<span class="grow w-2/3 pl-6">Développeur Web</span>
-			<span class="w-1/3 flex justify-center items-center space-x-1 text-xs">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 -960 960 960"
-					class="fill-background h-4 w-4"
-				>
-					<path
-						d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
-					/>
-				</svg>
-				<span>Paris - 92</span>
-			</span>
-		</div> -->
 	</div>
 
 	<!-- Description -->
 	<div class="px-6 text-justify relative text-base">
-		<div class="py-8 flex items-center">
+		<div class="py-6 flex items-center">
 			<Canvas />
 		</div>
 		Bonjour, et bienvenue sur mon site !<br /> <br />

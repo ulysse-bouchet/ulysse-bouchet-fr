@@ -12,7 +12,7 @@
 	};
 </script>
 
-<div class="fixed top-4 right-4 flex flex-col items-end z-20">
+<div class="fixed top-4 right-4 flex flex-col items-end z-[60]">
 	<button id="menuButton" on:click={toggleMenu} class="bg- rounded border-primary">
 		{#if menuOpened}
 			<svg

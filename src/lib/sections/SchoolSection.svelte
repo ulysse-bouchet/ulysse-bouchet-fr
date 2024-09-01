@@ -3,7 +3,7 @@
 	import Timeline from '$lib/components/timeline/Timeline.svelte';
 </script>
 
-<div id="school" class="min-h-screen min-w-screen bg-background p-6">
+<div id="school" class="min-h-screen min-w-screen bg-background rounded-b-3xl shadow-xl relative -mt-4 p-6 pt-10 z-30">
 	<span
 		class="font-heading font-medium text-xl text-accent">
 		Formation
