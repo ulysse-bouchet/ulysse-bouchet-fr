@@ -58,7 +58,7 @@
 			</div>
 		</div>
 
-		<button class="btn bg-accent border-none text-background">Envoyer</button>
+		<button class="!mt-8 btn bg-accent border-none text-background">Envoyer</button>
 	</div>
 </div>
 
