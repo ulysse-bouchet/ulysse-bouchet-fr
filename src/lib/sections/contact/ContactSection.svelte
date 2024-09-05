@@ -50,7 +50,13 @@
 			<textarea name="message" class="h-36"></textarea>
 		</div>
 
-		<CaptchaCanvas />
+		<div class="flex flex-col">
+			<label class="label" for="captcha"> Captcha </label>
+			<div class="flex w-full justify-between items-center">
+				<CaptchaCanvas />
+				<input type="text" class="input w-1/2 h-8" name="captcha" placeholder="ABCDEF" />
+			</div>
+		</div>
 
 		<button class="btn bg-accent border-none text-background">Envoyer</button>
 	</div>
