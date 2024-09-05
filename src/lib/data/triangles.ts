@@ -1,4 +1,4 @@
-type Triangle = {
+export type Triangle = {
 	x: number;
 	y: number;
 	sides: number;
@@ -7,10 +7,10 @@ type Triangle = {
 	stroke: string;
 	strokeWidth: number;
 	rotation: number;
-}
+};
 
 // Array containing the triangles attributes
-export const triangles: Triangle[] = [
+const triangles: Triangle[] = [
 	{
 		x: 0.5,
 		y: 0.1,
@@ -24,7 +24,7 @@ export const triangles: Triangle[] = [
 		x: 0.65,
 		y: 0.35,
 		sides: 3,
-		radius: 0.10,
+		radius: 0.1,
 		stroke: '#773686',
 		strokeWidth: 3,
 		rotation: 75
@@ -66,19 +66,19 @@ export const triangles: Triangle[] = [
 		rotation: 150
 	},
 	{
-		x: 0.10,
+		x: 0.1,
 		y: 0.15,
 		sides: 3,
-		radius: 0.10,
+		radius: 0.1,
 		stroke: '#773686',
 		strokeWidth: 3,
 		rotation: 0
 	},
 	{
-		x: 0.10,
+		x: 0.1,
 		y: 0.85,
 		sides: 3,
-		radius: 0.10,
+		radius: 0.1,
 		stroke: '#0E9594',
 		strokeWidth: 3,
 		rotation: 45
@@ -87,16 +87,16 @@ export const triangles: Triangle[] = [
 		x: 0.91,
 		y: 0.65,
 		sides: 3,
-		radius: 0.10,
+		radius: 0.1,
 		stroke: '#773686',
 		strokeWidth: 3,
 		rotation: 45
 	},
 	{
 		x: 0.52,
-		y: 0.70,
+		y: 0.7,
 		sides: 3,
-		radius: 0.10,
+		radius: 0.1,
 		stroke: '#EE6055',
 		strokeWidth: 3,
 		rotation: 105
@@ -111,3 +111,7 @@ export const triangles: Triangle[] = [
 		rotation: 70
 	}
 ];
+
+export const getTriangles = () => {
+	return JSON.parse(JSON.stringify(triangles));
+};

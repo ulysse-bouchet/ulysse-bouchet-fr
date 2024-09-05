@@ -7,8 +7,11 @@
 
 	const goTo = (section: string) => {
 		menuOpened = false;
-		let anchor = document.getElementById(section);
-		window.scrollTo({ top: anchor?.offsetTop, behavior: 'smooth' });
+		if (section === 'about') window.scrollTo({ top: 0, behavior: 'smooth' });
+		else {
+			const anchor = document.getElementById(section);
+			window.scrollTo({ top: (anchor?.offsetTop ?? 0) + 16, behavior: 'smooth' });
+		}
 	};
 </script>
 
@@ -66,6 +69,13 @@
 					}}
 				>
 					Projets
+				</button>
+				<button
+					on:click={() => {
+						goTo('contact');
+					}}
+				>
+					Contact
 				</button>
 			</div>
 		</div>

@@ -1,5 +1,5 @@
 <script>
-	import Canvas from '$lib/sections/about/Canvas.svelte';
+	import TriangleCanvas from '$lib/sections/about/TriangleCanvas.svelte';
 </script>
 
 <div id="about" class="relative min-h-screen min-w-screen bg-background rounded-b-3xl shadow-xl z-50">
@@ -21,7 +21,7 @@
 	<!-- Description -->
 	<div class="px-6 text-justify relative text-base">
 		<div class="py-6 flex items-center">
-			<Canvas />
+			<TriangleCanvas />
 		</div>
 		Bonjour, et bienvenue sur mon site !<br /> <br />
 		Je suis un jeune ingénieur en informatique, spécialisé dans le <span class="text-accent font-semibold">développement web</span>. Fraîchement diplômé

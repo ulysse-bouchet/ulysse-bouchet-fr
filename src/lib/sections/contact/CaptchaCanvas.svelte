@@ -2,7 +2,9 @@
 	// Imports
 	import { onMount } from 'svelte';
 	import { Stage, Layer, RegularPolygon } from 'svelte-konva';
-	import { triangles } from '$lib/data/triangles';
+	import { type Triangle, getTriangles } from '$lib/data/triangles';
+
+	const triangles: Triangle[] = getTriangles();
 
 	// Canvas size
 	let width = 1920;
@@ -10,10 +12,10 @@
 
 	// Update canvas size
 	onMount(() => {
-		const aboutSection = document.getElementById('about');
-		if (!aboutSection) return;
+		const contactSection = document.getElementById('contact');
+		if (!contactSection) return;
 
-		width = aboutSection.clientWidth - 48;
+		width = contactSection.clientWidth - 48;
 		height = 64;
 
 		// const colors = ['#6D466B', '#0E9594', '#EE6055'];
@@ -32,9 +34,7 @@
 		<Layer>
 			<!-- Triangles -->
 			{#each triangles as triangle}
-				<RegularPolygon
-					config={triangle}
-				/>
+				<RegularPolygon config={triangle} />
 			{/each}
 		</Layer>
 	</Stage>

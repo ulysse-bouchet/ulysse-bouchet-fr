@@ -3,7 +3,7 @@
 	import Timeline from '$lib/components/timeline/Timeline.svelte';
 </script>
 
-<div id="career" class="min-h-screen min-w-screen bg-primary-background rounded-b-3xl shadow-xl relative -mt-4 p-6 pt-10 z-40">
+<div id="career" class="bg-primary-background rounded-b-3xl shadow-xl relative -mt-4 p-6 pt-10 z-40">
 	<span
 		class="font-heading font-medium text-xl text-primary">
 		Carrière
