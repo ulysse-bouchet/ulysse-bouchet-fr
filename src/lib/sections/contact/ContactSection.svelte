@@ -1,5 +1,23 @@
-<script>
+<script lang="ts">
 	import CaptchaCanvas from '$lib/sections/contact/CaptchaCanvas.svelte';
+	import { checkForm } from './form';
+
+	const handleCaptchaInput = () => {
+		const inputField = document.getElementById('captcha') as HTMLInputElement;
+
+		if (inputField) {
+			// Allow only letters, convert to uppercase, and limit to 6 characters
+			inputField.value = inputField.value
+				.replace(/[^a-zA-Z]/g, '')
+				.toUpperCase()
+				.slice(0, 6);
+		}
+	};
+
+	const handleFormInput = () => {
+		const formCheck = checkForm();
+		console.log(formCheck);
+	};
 </script>
 
 <div
@@ -54,11 +72,20 @@
 			<label class="label" for="captcha"> Captcha </label>
 			<div class="flex w-full justify-between items-center">
 				<CaptchaCanvas />
-				<input type="text" class="input w-1/2 h-8" name="captcha" placeholder="ABCDEF" />
+				<input
+					id="captcha"
+					type="text"
+					class="input w-1/2 h-8"
+					name="captcha"
+					placeholder="ABCDEF"
+					on:input={handleCaptchaInput}
+				/>
 			</div>
 		</div>
 
-		<button class="!mt-8 btn bg-accent border-none text-background">Envoyer</button>
+		<button class="!mt-8 btn bg-accent border-none text-background" on:click={handleFormInput}>
+			Envoyer
+		</button>
 	</div>
 </div>
 

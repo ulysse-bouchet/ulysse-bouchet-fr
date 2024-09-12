@@ -3,23 +3,13 @@
 	import { onMount } from 'svelte';
 	import { Stage, Layer, RegularPolygon, Text } from 'svelte-konva';
 	import { type Triangle, getTriangles } from '$lib/data/triangles';
+	import { captcha } from './captcha_store';
 
 	const triangles: Triangle[] = getTriangles();
 
 	// Canvas size
 	let width = 1920;
 	let height = 1080;
-	let text: string = '';
-
-	const generateRandomString = (length = 6) => {
-		const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-		let result = '';
-		for (let i = 0; i < length; i++) {
-			const randomIndex = Math.floor(Math.random() * characters.length);
-			result += characters[randomIndex];
-		}
-		return result;
-	};
 
 	// Update canvas size
 	onMount(() => {
@@ -36,8 +26,6 @@
 			triangle.radius *= 100;
 			if (Math.random() < 0.5) triangle.fill = triangle.stroke;
 		});
-
-		text = generateRandomString();
 	});
 </script>
 
@@ -47,9 +35,20 @@
 		<Layer>
 			<!-- Triangles -->
 			{#each triangles as triangle}
-				<RegularPolygon config={triangle} />
+				<RegularPolygon config={{ ...triangle, opacity: 0.5 }} />
 			{/each}
-			<Text config={{ text, x: width / 4, y: height / 4, fontSize: 18 }}></Text>
+			<Text
+				config={{
+					text: $captcha,
+					width,
+					height,
+					fontSize: 18,
+					align: 'center',
+					verticalAlign: 'middle',
+					letterSpacing: 4,
+					fontStyle: 'bold'
+				}}
+			></Text>
 		</Layer>
 	</Stage>
 </div>
