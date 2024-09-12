@@ -1,5 +1,12 @@
 import { captcha } from './captcha_store';
 
+export type FormStatus = {
+	name: true | Error;
+	mail: true | Error;
+	message: true | Error;
+	captcha: true | Error;
+};
+
 type FormData = {
 	name: string;
 	mail: string;
@@ -37,23 +44,23 @@ const parseForm = (): FormData => {
 };
 
 const checkName = (nameInput: string): true | Error => {
-	return nameInput !== '' ? true : [false, 'Nom vide.'];
+	return nameInput !== '' ? true : [false, 'Veuillez indiquer un nom.'];
 };
 
 const checkMail = (mailInput: string): true | Error => {
-	if (mailInput === '') return [false, 'Adresse vide.'];
+	if (mailInput === '') return [false, 'Veuillez indiquer une adresse mail.'];
 
 	const mailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-	return mailRegex.test(mailInput) ? true : [false, 'Adresse mail invalide.'];
+	return mailRegex.test(mailInput) ? true : [false, 'Veillez à ce que votre adresse mail soit valide.'];
 };
 
 const checkMessage = (messageInput: string): true | Error => {
-	return messageInput !== '' ? true : [false, 'Message vide.'];
+	return messageInput !== '' ? true : [false, 'Veuillez rédiger un message.'];
 };
 
 const checkCaptcha = (captchaInput: string): true | Error => {
-	if (captchaInput === '') return [false, 'Captcha vide.'];
+	if (captchaInput === '') return [false, 'Veuillez renseigner le code captcha.'];
 
 	let captchaValue: string = '';
 	captcha.subscribe((c) => (captchaValue = c));
@@ -61,21 +68,13 @@ const checkCaptcha = (captchaInput: string): true | Error => {
 	return captchaInput === captchaValue ? true : [false, 'Captcha erroné.'];
 };
 
-export const checkForm = (): true | Error[] => {
-	const formData = parseForm();
-	const errors: Error[] = [];
+export const checkForm = (): FormStatus => {
+	const formData: FormData = parseForm();
 
-	const nameCheck = checkName(formData.name);
-	if (nameCheck != true) errors.push(nameCheck);
-
-	const mailCheck = checkMail(formData.mail);
-	if (mailCheck != true) errors.push(mailCheck);
-
-	const messageCheck = checkMessage(formData.message);
-	if (messageCheck != true) errors.push(messageCheck);
-
-	const captchaCheck = checkCaptcha(formData.captcha);
-	if (captchaCheck != true) errors.push(captchaCheck);
-
-	return errors.length === 0 ? true : errors;
+	return {
+		name: checkName(formData.name),
+		mail: checkMail(formData.mail),
+		message: checkMessage(formData.message),
+		captcha: checkCaptcha(formData.captcha)
+	};
 };

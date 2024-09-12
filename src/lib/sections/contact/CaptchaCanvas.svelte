@@ -45,8 +45,7 @@
 					fontSize: 18,
 					align: 'center',
 					verticalAlign: 'middle',
-					letterSpacing: 4,
-					fontStyle: 'bold'
+					letterSpacing: 8
 				}}
 			></Text>
 		</Layer>
