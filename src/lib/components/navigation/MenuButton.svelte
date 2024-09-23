@@ -16,7 +16,7 @@
 </script>
 
 <div class="fixed top-4 right-4 flex flex-col items-end z-[60]">
-	<button id="menuButton" on:click={toggleMenu} class="bg- rounded border-primary">
+	<button id="menuButton" on:click={toggleMenu} class="rounded border-primary">
 		{#if menuOpened}
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -39,9 +39,9 @@
 	</button>
 	{#if menuOpened}
 		<div
-			class="bg-[rgba(246,239,235,0.8)] border rounded-sm border-text font-light -translate-y-0.5 -z-10"
+			class="bg-[rgba(246,239,235,0.8)] border rounded-lg border-text font-lig -translate-y-0.5 -z-10"
 		>
-			<div id="menuList" class="pr-3 pl-6 py-3 flex flex-col items-end space-y-3">
+			<div id="menuList" class="py-4 pr-5 pl-8 flex flex-col items-end space-y-3">
 				<button
 					on:click={() => {
 						goTo('about');
