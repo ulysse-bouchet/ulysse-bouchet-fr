@@ -16,9 +16,43 @@
 		}
 	};
 
-	const handleFormInput = () => {
+	const handleFormInput = async () => {
 		formStatus = checkForm();
 		console.log(formStatus);
+		const allFieldsTrue = Object.values(formStatus).every((value) => value === true);
+
+		if (allFieldsTrue) {
+			// Gather form data
+			const name = (document.querySelector('input[name="name"]') as HTMLInputElement).value;
+			const mail = (document.querySelector('input[name="mail"]') as HTMLInputElement).value;
+			const message = (document.querySelector('textarea[name="message"]') as HTMLTextAreaElement)
+				.value;
+			const captcha = (document.getElementById('captcha') as HTMLInputElement).value;
+
+			// Send email request to Cloudflare Worker
+			const response = await fetch('https://contact.ulysse-bonneau.workers.dev/', {
+				// Replace with your actual worker URL
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({ name, mail, message })
+			});
+
+			if (response.ok) {
+				const result = await response.json();
+				if (result.status === 'success') {
+					console.log('Email sent successfully!');
+					// Optionally, show a success message or reset the form
+				} else {
+					console.error('Error sending email:', result.message);
+					// Optionally, show an error message
+				}
+			} else {
+				console.error('Failed to send email:', response.statusText);
+				// Optionally, show an error message
+			}
+		}
 	};
 </script>
 
