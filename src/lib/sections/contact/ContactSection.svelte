@@ -18,7 +18,6 @@
 
 	const handleFormInput = async () => {
 		formStatus = checkForm();
-		console.log(formStatus);
 		const allFieldsTrue = Object.values(formStatus).every((value) => value === true);
 
 		if (allFieldsTrue) {
@@ -27,7 +26,6 @@
 			const mail = (document.querySelector('input[name="mail"]') as HTMLInputElement).value;
 			const message = (document.querySelector('textarea[name="message"]') as HTMLTextAreaElement)
 				.value;
-			const captcha = (document.getElementById('captcha') as HTMLInputElement).value;
 
 			// Send email request to Cloudflare Worker
 			const response = await fetch('https://contact.ulysse-bonneau.workers.dev/', {
@@ -44,6 +42,10 @@
 				if (result.status === 'success') {
 					console.log('Email sent successfully!');
 					// Optionally, show a success message or reset the form
+
+					// Clear the form
+					const form = document.getElementById("contact-form") as HTMLFormElement;
+					form.reset();
 				} else {
 					console.error('Error sending email:', result.message);
 					// Optionally, show an error message
@@ -61,7 +63,7 @@
 	class="bg-accent-background rounded-b-3xl shadow-xl relative -mt-4 p-6 pt-10 z-10"
 >
 	<span class="font-heading font-medium text-xl text-accent"> Contact </span>
-	<div class="flex py-4 space-y-4 flex-col justify-center">
+	<form id="contact-form" class="flex py-4 space-y-4 flex-col justify-center">
 		<div class="field">
 			<label for="name"> Nom </label>
 			<div class={formStatus && formStatus.name !== true ? 'outline-red-500 outline' : ''}>
@@ -136,10 +138,10 @@
 			{/if}
 		</div>
 
-		<button class="!mt-8 btn bg-accent border-none text-background" on:click={handleFormInput}>
+		<button class="!mt-8 btn bg-accent border-none text-background" on:click|preventDefault={handleFormInput}>
 			Envoyer
 		</button>
-	</div>
+	</form>
 </div>
 
 <style>
