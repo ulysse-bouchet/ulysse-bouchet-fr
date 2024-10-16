@@ -9,7 +9,7 @@
 	<div class="flex flex-col items-center">
 		<img
 			alt="Ulysse Bouchet"
-			src="ulysse.jpg"
+			src="images/ulysse.jpg"
 			class="mt-8 w-2/3 h-2/3 rounded-full aspect-square object-cover shadow-xl
 			border-4 border-l-primary border-t-primary border-r-secondary border-b-secondary"
 		/>

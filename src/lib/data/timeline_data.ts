@@ -1,22 +1,25 @@
 export type TimelineElement = {
-	time: string,
-	title: string,
-	subtitle: string,
-	description: string,
-	tags?: Array<Tag>,
-}
+	time: string;
+	logo: string;
+	title: string;
+	subtitle: string;
+	description: string;
+	tags?: Array<Tag>;
+};
 
 export type Tag = {
-	text: string,
-	link: string,
-}
+	text: string;
+	link: string;
+};
 
 export const career: TimelineElement[] = [
 	{
 		time: '2022 - 2024',
+		logo: 'cea.png',
 		title: 'CEA Paris-Saclay',
 		subtitle: 'Développeur Web - Alternance',
-		description: 'The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. ' +
+		description:
+			'The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. ' +
 			'It played a pivotal role in establishing desktop publishing as a general office function. ' +
 			'The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; ' +
 			'it came with a keyboard and single-button mouse.',
@@ -36,18 +39,22 @@ export const career: TimelineElement[] = [
 	},
 	{
 		time: 'Mai - Août 2021',
+		logo: 'hitachi.svg',
 		title: 'Hitachi Rail',
 		subtitle: 'Développeur logiciel - Stage',
-		description: 'The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. ' +
+		description:
+			'The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. ' +
 			'It played a pivotal role in establishing desktop publishing as a general office function. ' +
 			'The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; ' +
 			'it came with a keyboard and single-button mouse.'
 	},
 	{
 		time: 'Mai - Juillet 2020',
+		logo: 'edf.svg',
 		title: 'EDF Lab Paris-Saclay',
 		subtitle: 'Développeur logiciel - Stage',
-		description: 'The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. ' +
+		description:
+			'The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. ' +
 			'It played a pivotal role in establishing desktop publishing as a general office function. ' +
 			'The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; ' +
 			'it came with a keyboard and single-button mouse.'
@@ -57,31 +64,36 @@ export const career: TimelineElement[] = [
 export const school: TimelineElement[] = [
 	{
 		time: '2022 - 2024',
+		logo: 'efrei.svg',
 		title: 'Efrei Paris',
-		subtitle: 'École d\'ingénieurs en informatique',
-		description: 'The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. ' +
+		subtitle: "École d'ingénieurs en informatique",
+		description:
+			'The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. ' +
 			'It played a pivotal role in establishing desktop publishing as a general office function. ' +
 			'The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; ' +
 			'it came with a keyboard and single-button mouse.'
 	},
 	{
 		time: '2020 - 2022',
+		logo: 'ensiie.png',
 		title: 'ENSIIE',
-		subtitle: 'École d\'ingénieurs en informatique',
-		description: 'The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. ' +
+		subtitle: "École d'ingénieurs en informatique",
+		description:
+			'The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. ' +
 			'It played a pivotal role in establishing desktop publishing as a general office function. ' +
 			'The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; ' +
 			'it came with a keyboard and single-button mouse.'
 	},
 	{
 		time: '2018 - 2020',
+		logo: 'iut-paris.png',
 		title: 'I.U.T. Paris Descartes',
 		subtitle: 'Institut Universitaire de Technologie',
-		description: 'Mes années à l\'IUT sont celles qui ont réellement forgé le développeur que je suis devenu. ' +
-			'J\'ai pu découvrir de nombreux aspects de l\'informatique à travers des cours et des projets variés : ' +
+		description:
+			"Mes années à l'IUT sont celles qui ont réellement forgé le développeur que je suis devenu. " +
+			"J'ai pu découvrir de nombreux aspects de l'informatique à travers des cours et des projets variés : " +
 			'développement web, logiciel et mobile, gestion de bases de données, systèmes et réseaux. ' +
-			'De plus, j\'ai pu assister à quelques cours de mathématiques, d\'économie et de droit. ' +
-			'J\'ai fini ma formation avec une moyenne supérieure à 16/20, ce qui m\'a permis de me hisser à la 3ème place de ma promo (~180 élèves initialement).'
+			"De plus, j'ai pu assister à quelques cours de mathématiques, d'économie et de droit. " +
+			"J'ai fini ma formation avec une moyenne supérieure à 16/20, ce qui m'a permis de me hisser à la 3ème place de ma promo (~180 élèves initialement)."
 	}
 ];
-
