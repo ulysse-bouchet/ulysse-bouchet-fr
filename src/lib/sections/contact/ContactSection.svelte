@@ -95,7 +95,7 @@
 	<form id="contact-form" class="flex py-4 space-y-4 flex-col justify-center">
 		<div class="field">
 			<label for="name"> Nom </label>
-			<div class={formStatus && formStatus.name !== true ? 'outline-red-500 outline' : ''}>
+			<div class="outline {formStatus && formStatus.name !== true ? 'outline-red-500 ' : 'outline-transparent'}">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 16 16"
@@ -108,14 +108,14 @@
 				</svg>
 				<input type="text" class="grow" name="name" placeholder="John Doe" />
 			</div>
-			{#if formStatus && formStatus.name !== true}
-				<span class="mt-2 text-red-500 text-sm">{formStatus.name[1]}</span>
-			{/if}
+			<span class="mt-2 text-red-500 text-sm h-[14px]">
+				{#if formStatus && formStatus.name !== true}{formStatus.name[1]}{/if}
+			</span>
 		</div>
 
 		<div class="field">
 			<label for="mail"> Adresse mail </label>
-			<div class={formStatus && formStatus.mail !== true ? 'outline-red-500 outline' : ''}>
+			<div class="outline {formStatus && formStatus.mail !== true ? 'outline-red-500 ' : 'outline-transparent'}">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 16 16"
@@ -131,20 +131,20 @@
 				</svg>
 				<input type="text" class="grow" name="mail" placeholder="example@gmail.com" />
 			</div>
-			{#if formStatus && formStatus.mail !== true}
-				<span class="mt-2 text-red-500 text-sm">{formStatus.mail[1]}</span>
-			{/if}
+			<span class="mt-2 text-red-500 text-sm h-[14px]">
+				{#if formStatus && formStatus.mail !== true}{formStatus.mail[1]}{/if}
+			</span>
 		</div>
 
 		<div class="field">
 			<label for="message"> Message </label>
 			<textarea
 				name="message"
-				class="h-36 {formStatus && formStatus.message !== true ? 'outline-red-500 outline' : ''}"
+				class="h-36 outline {formStatus && formStatus.message !== true ? 'outline-red-500 ' : 'outline-transparent'}"
 			/>
-			{#if formStatus && formStatus.message !== true}
-				<span class="mt-2 text-red-500 text-sm">{formStatus.message[1]}</span>
-			{/if}
+			<span class="mt-2 text-red-500 text-sm h-[14px]">
+				{#if formStatus && formStatus.message !== true}{formStatus.message[1]}{/if}
+			</span>
 		</div>
 
 		<div class="flex flex-col">
@@ -153,18 +153,16 @@
 				<input
 					id="captcha"
 					type="text"
-					class="input w-1/2 h-8 {formStatus && formStatus.captcha !== true
-						? 'outline-red-500 outline'
-						: ''}"
+					class="input w-1/2 h-8 outline {formStatus && formStatus.captcha !== true ? 'outline-red-500 ' : 'outline-transparent'}"
 					name="captcha"
 					placeholder="ABCDEF"
 					on:input={handleCaptchaInput}
 				/>
 				<CaptchaCanvas />
 			</div>
-			{#if formStatus && formStatus.captcha !== true}
-				<span class="mt-2 text-red-500 text-sm">{formStatus.captcha[1]}</span>
-			{/if}
+			<span class="mt-2 text-red-500 text-sm h-[14px]">
+				{#if formStatus && formStatus.captcha !== true}{formStatus.captcha[1]}{/if}
+			</span>
 		</div>
 
 		<button
