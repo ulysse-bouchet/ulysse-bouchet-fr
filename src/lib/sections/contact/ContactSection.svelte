@@ -16,7 +16,21 @@
 		}
 	};
 
+	const resetButton = () => {
+		const btn = document.getElementById('send-button') as HTMLButtonElement;
+		btn.textContent = 'Envoyer';
+		btn.style.backgroundColor = '#EE6055';
+		btnOnCooldown = false;
+	};
+
+	let btnOnCooldown = false;
 	const handleFormInput = async () => {
+		if (btnOnCooldown) return;
+
+		const btn = document.getElementById('send-button') as HTMLButtonElement;
+		btn.textContent = '...';
+		btnOnCooldown = true;
+
 		formStatus = checkForm();
 		const allFieldsTrue = Object.values(formStatus).every((value) => value === true);
 
@@ -40,20 +54,35 @@
 			if (response.ok) {
 				const result = await response.json();
 				if (result.status === 'success') {
-					console.log('Email sent successfully!');
-					// Optionally, show a success message or reset the form
+					btn.textContent = 'Message envoyé avec succès !';
+					btn.style.backgroundColor = '#00A96E';
 
 					// Clear the form
-					const form = document.getElementById("contact-form") as HTMLFormElement;
+					const form = document.getElementById('contact-form') as HTMLFormElement;
 					form.reset();
+
+					setTimeout(resetButton, 3000);
 				} else {
+					btn.textContent = 'Erreur. Veuillez réessayer ultérieurement.';
+					btn.style.backgroundColor = '#F08C84';
+
 					console.error('Error sending email:', result.message);
-					// Optionally, show an error message
+
+					setTimeout(resetButton, 3000);
 				}
 			} else {
+				btn.textContent = 'Erreur. Veuillez réessayer ultérieurement.';
+				btn.style.backgroundColor = '#F08C84';
+
 				console.error('Failed to send email:', response.statusText);
-				// Optionally, show an error message
+
+				setTimeout(resetButton, 3000);
 			}
+		} else {
+			btn.textContent = 'Veuillez remplir correctement le formulaire.';
+			btn.style.backgroundColor = '#F08C84';
+
+			setTimeout(resetButton, 3000);
 		}
 	};
 </script>
@@ -138,7 +167,11 @@
 			{/if}
 		</div>
 
-		<button class="!mt-8 btn bg-accent border-none text-background" on:click|preventDefault={handleFormInput}>
+		<button
+			id="send-button"
+			class="!mt-8 btn bg-accent border-none text-background transition-colors"
+			on:click|preventDefault={handleFormInput}
+		>
 			Envoyer
 		</button>
 	</form>
