@@ -63,13 +63,13 @@
 				>
 					Formation
 				</button>
-				<button
+				<!-- <button
 					on:click={() => {
 						goTo('projects');
 					}}
 				>
 					Projets
-				</button>
+				</button> -->
 				<button
 					on:click={() => {
 						goTo('contact');
