@@ -57,11 +57,12 @@
 					btn.textContent = 'Message envoyé avec succès !';
 					btn.style.backgroundColor = '#00A96E';
 
-					// Clear the form
-					const form = document.getElementById('contact-form') as HTMLFormElement;
-					form.reset();
-
-					setTimeout(resetButton, 3000);
+					setTimeout(() => {
+						// Clear the form and reset button
+						const form = document.getElementById('contact-form') as HTMLFormElement;
+						form.reset();
+						resetButton();
+					}, 3000);
 				} else {
 					btn.textContent = 'Erreur. Veuillez réessayer ultérieurement.';
 					btn.style.backgroundColor = '#F08C84';
@@ -95,7 +96,11 @@
 	<form id="contact-form" class="flex py-4 space-y-4 flex-col justify-center">
 		<div class="field">
 			<label for="name"> Nom </label>
-			<div class="outline {formStatus && formStatus.name !== true ? 'outline-red-500 ' : 'outline-transparent'}">
+			<div
+				class="outline {formStatus && formStatus.name !== true
+					? 'outline-red-500 '
+					: 'outline-transparent'}"
+			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 16 16"
@@ -115,7 +120,11 @@
 
 		<div class="field">
 			<label for="mail"> Adresse mail </label>
-			<div class="outline {formStatus && formStatus.mail !== true ? 'outline-red-500 ' : 'outline-transparent'}">
+			<div
+				class="outline {formStatus && formStatus.mail !== true
+					? 'outline-red-500 '
+					: 'outline-transparent'}"
+			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 16 16"
@@ -140,7 +149,9 @@
 			<label for="message"> Message </label>
 			<textarea
 				name="message"
-				class="h-36 outline {formStatus && formStatus.message !== true ? 'outline-red-500 ' : 'outline-transparent'}"
+				class="h-36 outline {formStatus && formStatus.message !== true
+					? 'outline-red-500 '
+					: 'outline-transparent'}"
 			/>
 			<span class="mt-2 text-red-500 text-sm h-[14px]">
 				{#if formStatus && formStatus.message !== true}{formStatus.message[1]}{/if}
@@ -153,7 +164,9 @@
 				<input
 					id="captcha"
 					type="text"
-					class="input w-1/2 h-8 outline {formStatus && formStatus.captcha !== true ? 'outline-red-500 ' : 'outline-transparent'}"
+					class="input w-1/2 h-8 outline {formStatus && formStatus.captcha !== true
+						? 'outline-red-500 '
+						: 'outline-transparent'}"
 					name="captcha"
 					placeholder="ABCDEF"
 					on:input={handleCaptchaInput}
