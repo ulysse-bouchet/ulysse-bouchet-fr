@@ -9,9 +9,9 @@
 		Carrière
 	</span>
 	<Timeline data={career} color="primary" />
-	<div class="flex justify-center">
+	<!-- <div class="flex justify-center">
 		<button class="text-center text-primary">
 			En savoir plus ->
 		</button>
-	</div>
+	</div> -->
 </div>

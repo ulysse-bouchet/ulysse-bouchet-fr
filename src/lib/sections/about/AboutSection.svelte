@@ -17,7 +17,7 @@
 		<!-- Infos -->
 		<div class="mt-4 flex flex-col items-center">
 			<span class="text-primary text-xl font-medium">Ulysse Bouchet</span>
-			<span class="text-secondary text-base font-medium">23 ans - Paris/92</span>
+			<span class="text-secondary text-base font-medium">23 ans - Paris & 92</span>
 		</div>
 	</div>
 

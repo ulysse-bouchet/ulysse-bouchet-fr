@@ -9,9 +9,9 @@
 		Formation
 	</span>
 	<Timeline data={school} color="accent" />
-	<div class="flex justify-center">
+	<!-- <div class="flex justify-center">
 		<button class="text-center text-accent">
 			En savoir plus ->
 		</button>
-	</div>
+	</div> -->
 </div>
