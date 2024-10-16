@@ -24,7 +24,7 @@
 	</div>
 	<div class="timeline-end mt-[2px] pl-2 pb-6">
 		<time class="text-sm">{element.time}</time>
-		<div class="title text-lg font-medium text-{color} flex items-center space-x-3">
+		<div class="title text-lg font-medium text-{color} flex items-center space-x-2">
 			<img src="images/{element.logo}" class="w-12" alt="logo" />
 			<span> {element.title} </span>
 		</div>
