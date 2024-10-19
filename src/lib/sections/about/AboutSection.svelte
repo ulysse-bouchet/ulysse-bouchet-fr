@@ -4,7 +4,7 @@
 
 <div
 	id="about"
-	class="relative min-h-screen min-w-screen bg-background rounded-b-3xl shadow-xl z-50"
+	class="relative bg-background rounded-b-3xl lg:rounded-t-3xl shadow-xl z-50 "
 >
 	<div class="flex flex-col items-center">
 		<img

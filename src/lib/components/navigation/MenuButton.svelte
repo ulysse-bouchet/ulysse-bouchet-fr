@@ -39,7 +39,7 @@
 	</button>
 	{#if menuOpened}
 		<div
-			class="bg-[rgba(246,239,235,0.8)] border rounded-lg border-text font-lig -translate-y-0.5 -z-10"
+			class="bg-[rgba(246,239,235,0.8)] border rounded-lg border-text font-lig -translate-y-0.5 -z-10 lg:bg-transparent lg:border-none"
 		>
 			<div id="menuList" class="py-4 pr-5 pl-8 flex flex-col items-end space-y-3">
 				<button
