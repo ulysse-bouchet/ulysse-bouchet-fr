@@ -15,7 +15,7 @@
 		const aboutSection = document.getElementById('about');
 		if (!aboutSection) return;
 
-		width = aboutSection.clientWidth - 48;
+		width = aboutSection.clientWidth * 0.875;
 		height = 64;
 
 		// const colors = ['#6D466B', '#0E9594', '#EE6055']

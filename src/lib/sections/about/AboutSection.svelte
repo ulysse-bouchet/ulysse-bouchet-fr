@@ -4,26 +4,27 @@
 
 <div
 	id="about"
-	class="relative bg-background rounded-b-3xl lg:rounded-t-3xl shadow-xl z-50 "
+	class="relative bg-background rounded-b-3xl lg:rounded-t-3xl shadow-xl z-50"
 >
 	<div class="flex flex-col items-center">
 		<img
 			alt="Ulysse Bouchet"
 			src="images/ulysse.jpg"
 			class="mt-8 w-2/3 h-2/3 rounded-full aspect-square object-cover shadow-xl
-			border-4 border-l-primary border-t-primary border-r-secondary border-b-secondary"
+			border-4 border-l-primary border-t-primary border-r-secondary border-b-secondary
+			lg:w-3/5 lg:h-3/5"
 		/>
 
 		<!-- Infos -->
 		<div class="mt-4 flex flex-col items-center">
-			<span class="text-primary text-xl font-medium">Ulysse Bouchet</span>
-			<span class="text-secondary text-base font-medium">23 ans - Paris & 92</span>
+			<span class="text-primary text-xl font-medium lg:text-2xl lg:pt-2">Ulysse Bouchet</span>
+			<span class="text-secondary font-medium lg:pt-2">23 ans - Paris & 92</span>
 		</div>
 	</div>
 
 	<!-- Description -->
-	<div class="px-6 text-justify relative text-base">
-		<div class="py-6 flex items-center">
+	<div class="px-6 text-justify relative lg:px-16">
+		<div class="py-6 lg:py-16 flex items-center">
 			<TriangleCanvas />
 		</div>
 		Bonjour, et bienvenue sur mon site !<br /> <br />
@@ -36,7 +37,7 @@
 		sur le thème de l'open source, un sujet qui m'intéresse tout particulièrement.<br /> <br />
 		Pour en savoir plus à mon sujet, je vous invite à continuer votre visite en scrollant plus bas !
 	</div>
-	<div class="flex justify-center py-6">
+	<div class="flex justify-center py-6 lg:py-10">
 		<a
 			href="CV - Version française (2024).pdf"
 			download="CV - Version française (2024).pdf"

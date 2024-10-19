@@ -90,9 +90,9 @@
 
 <div
 	id="contact"
-	class="bg-accent-background rounded-b-3xl shadow-xl relative -mt-4 p-6 pt-10 z-10"
+	class="bg-accent-background rounded-b-3xl shadow-xl relative -mt-4 p-6 pt-10 z-10 lg:pt-14 lg:px-12"
 >
-	<span class="font-heading font-medium text-xl text-accent"> Contact </span>
+	<span class="font-heading font-medium text-xl text-accent lg:text-2xl"> Contact </span>
 	<form id="contact-form" class="flex py-4 space-y-4 flex-col justify-center">
 		<div class="field">
 			<label for="name"> Nom </label>
@@ -180,7 +180,7 @@
 
 		<button
 			id="send-button"
-			class="!mt-8 btn bg-accent border-none text-background transition-colors"
+			class="!mt-8 btn bg-accent border-none text-background transition-colors lg:pb-12 lg:pt-4 lg:text-lg lg:!mt-16 lg:!mb-4"
 			on:click|preventDefault={handleFormInput}
 		>
 			Envoyer

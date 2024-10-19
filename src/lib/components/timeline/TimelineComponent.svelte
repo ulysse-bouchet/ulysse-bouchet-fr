@@ -23,12 +23,12 @@
 		</svg>
 	</div>
 	<div class="timeline-end mt-[2px] pl-2 pb-6">
-		<time class="text-sm">{element.time}</time>
-		<div class="title text-lg font-medium text-{color} flex items-center space-x-2">
-			<img src="images/{element.logo}" class="w-12" alt="logo" />
+		<time class="text-sm lg:text-base">{element.time}</time>
+		<div class="title text-lg font-medium text-{color} flex items-center space-x-2 lg:text-xl lg:space-x-3 lg:py-2">
+			<img src="images/{element.logo}" class="w-12 lg:w-16" alt="logo" />
 			<span> {element.title} </span>
 		</div>
-		<div class="subtitle text-sm text-{color} mb-4">{element.subtitle}</div>
+		<div class="subtitle text-sm text-{color} mb-4 lg:text-lg">{element.subtitle}</div>
 		{element.description}
 		{#if element.tags}
 			<div class="mt-2 flex flex-wrap">
