@@ -24,11 +24,15 @@ export default {
 			},
 			fontFamily: {
 				heading: 'Inter',
-				body: 'Inter',
+				body: 'Inter'
 			},
 			fontWeight: {
 				normal: '400',
 				bold: '700'
+			},
+			screens: {
+				xxl: { min: '2160px' },
+				'max-lg': { max: '1023px' }
 			}
 		}
 	},

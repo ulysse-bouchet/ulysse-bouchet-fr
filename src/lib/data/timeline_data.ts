@@ -80,7 +80,7 @@ export const school: TimelineElement[] = [
 		description:
 			"Mes anciens camarades de l'IUT m'ont chaudement recommandé l'Efrei, en particulier pour ses formations par apprentissage. " +
 			"J'ai ainsi rejoint le parcours Big Data & Machine learning, même si je savais ne pas vouloir continuer dans cette voie, afin de pouvoir devenir un développeur plus complet. " +
-			"La formation par alternance m'a ainsi permis d'en apprendre plus sur ce domaine pendant mes cours, tout en commençant ma carrière dans le développement web grâçe à l'alternance. " +
+			"La formation par alternance m'a ainsi permis d'en apprendre plus sur ce domaine pendant mes cours, tout en commençant ma carrière dans le développement web grâce à l'alternance. " +
 			"J'ai également pu vivre une expérience à l'étranger lors d'un séjour linguistique en Corée d'une durée de 3 mois."
 	},
 	{
@@ -102,7 +102,7 @@ export const school: TimelineElement[] = [
 			"Mes années à l'IUT sont celles qui ont réellement forgé le développeur que je suis devenu. " +
 			"J'ai pu découvrir de nombreux aspects de l'informatique à travers des cours et des projets variés : " +
 			'développement web, logiciel et mobile, gestion de bases de données, systèmes et réseaux. ' +
-			"De plus, j'ai pu assister à quelques cours de mathématiques, d'économie et de droit. " +
+			"De plus, j'ai suivi des cours de mathématiques, d'économie et de droit. " +
 			"J'ai fini ma formation avec une moyenne supérieure à 16/20, ce qui m'a permis de me hisser à la 3ème place de ma promotion (~180 élèves initialement)."
 	}
 ];

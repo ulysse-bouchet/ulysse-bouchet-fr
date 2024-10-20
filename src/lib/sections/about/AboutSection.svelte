@@ -9,7 +9,8 @@
 			src="images/ulysse.jpg"
 			class="mt-8 w-2/3 h-2/3 rounded-full aspect-square object-cover shadow-xl
 			border-4 border-l-primary border-t-primary border-r-secondary border-b-secondary
-			lg:w-3/5 lg:h-3/5"
+			lg:w-96 lg:h-96
+			xxl:w-3/5 xxl:h-3/5"
 		/>
 
 		<!-- Infos -->
@@ -20,7 +21,7 @@
 	</div>
 
 	<!-- Description -->
-	<div class="px-6 text-justify relative lg:px-16">
+	<div id="description" class="mx-6 text-justify relative lg:mx-16">
 		<div class="py-6 lg:py-16 flex items-center">
 			<TriangleCanvas />
 		</div>

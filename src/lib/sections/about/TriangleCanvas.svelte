@@ -12,10 +12,10 @@
 
 	// Update canvas size
 	onMount(() => {
-		const aboutSection = document.getElementById('about');
-		if (!aboutSection) return;
+		const descriptionDiv = document.getElementById('description');
+		if (!descriptionDiv) return;
 
-		width = aboutSection.clientWidth * 0.875;
+		width = descriptionDiv.clientWidth;
 		height = 64;
 
 		// const colors = ['#6D466B', '#0E9594', '#EE6055']
