@@ -2,10 +2,7 @@
 	import TriangleCanvas from '$lib/sections/about/TriangleCanvas.svelte';
 </script>
 
-<div
-	id="about"
-	class="relative bg-background rounded-b-3xl lg:rounded-t-3xl shadow-xl z-50"
->
+<div id="about" class="relative bg-background rounded-b-3xl lg:rounded-t-3xl shadow-xl z-50">
 	<div class="flex flex-col items-center">
 		<img
 			alt="Ulysse Bouchet"
@@ -33,11 +30,15 @@
 		Paris, je suis maintenant à la recherche d'un emploi dans ce domaine qui me passionne.
 		<br /> <br />
 		J'ai pu acquérir de nombreuses compétences grâce à plusieurs stages, mais surtout à l'issue de ma
-		formation par apprentissage au CEA Paris-Saclay. J'ai également eu l'occasion de rédiger un mémoire
-		sur le thème de l'open source, un sujet qui m'intéresse tout particulièrement.<br /> <br />
+		formation par apprentissage au CEA Paris-Saclay. J'ai également eu l'occasion de rédiger un
+		<a href="Mémoire.pdf" download="Mémoire.pdf" class="text-secondary font-semibold">
+			mémoire sur le thème de l'open source,
+		</a>
+		un sujet qui m'intéresse tout particulièrement.<br />
+		<br />
 		Pour en savoir plus à mon sujet, je vous invite à continuer votre visite en scrollant plus bas !
 	</div>
-	<div class="flex justify-center py-6 lg:py-10">
+	<div class="flex justify-center py-6 lg:py-10 lg:pb-12">
 		<a
 			href="CV - Version française (2024).pdf"
 			download="CV - Version française (2024).pdf"

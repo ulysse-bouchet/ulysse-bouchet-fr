@@ -22,7 +22,7 @@
 			<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
 		</svg>
 	</div>
-	<div class="timeline-end mt-[2px] pl-2 pb-6">
+	<div class="timeline-end mt-[2px] pl-2 pb-6 lg:pl-4">
 		<time class="text-sm lg:text-base">{element.time}</time>
 		<div class="title text-lg font-medium text-{color} flex items-center space-x-2 lg:text-xl lg:space-x-3 lg:py-2">
 			<img src="images/{element.logo}" class="w-12 lg:w-16" alt="logo" />
