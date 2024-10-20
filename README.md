@@ -44,7 +44,3 @@ Pour déployer sur Cloudflare Pages, suivez la documentation officielle de Cloud
 ## Me contacter
 
 Si vous avez des questions ou souhaitez en savoir plus, n'hésitez pas à me contacter via [le formulaire de contact](https://ulyssebouchet.fr#contact) sur mon site ou à travers mes profils LinkedIn et GitHub.
-
----
-
-N'hésite pas à ajuster ce modèle selon les détails spécifiques que tu veux inclure !
