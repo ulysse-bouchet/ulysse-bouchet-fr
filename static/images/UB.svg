@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg268225" viewBox="272 144 480 480" height="480px" width="480px" version="1.1" xmlns:bx="https://boxy-svg.com">
+  <defs id="defs268229">
+    <bx:export>
+      <bx:file format="svg" href="#logo-group"/>
+    </bx:export>
+  </defs>
+  <g id="logo-group" style="" transform="matrix(1.701327, 0, 0, 1.701327, -359.098511, -269.322296)">
+    <image id="container" style="display: none;" x="272" y="144" width="480" height="480" transform="translate(0 0)" href=""/>
+    <g id="logo-center" transform="translate(0 0)">
+      <image id="icon_container" style="display: none;" x="0" y="0" href=""/>
+      <g id="slogan" style="font-style:normal;font-weight:400;font-size:32px;line-height:1;font-family:'Roboto Slab';font-variant-ligatures:none;text-align:center;text-anchor:middle" transform="translate(0 0)"/>
+      <g id="title" style="font-style:normal;font-weight:normal;font-size:72px;line-height:1;font-family:'Brandmark Sans 2 Color';font-variant-ligatures:normal;text-align:center;text-anchor:middle" transform="translate(0 0)">
+        <g id="path268234" aria-label="U" transform="translate(0 358.48) translate(370.98405499999996 -50.943999999999996) scale(3) translate(-465.13081 50.472)">
+          <path class="c1" d="M121.70996,74.50977v29.30664c0,13.39355-8.28027,21.67383-21.60156,21.67383 c-13.46484,0-21.81836-8.28027-21.81836-21.67383V74.50977H89.5957v29.30664c0,7.05664,4.24805,11.80957,10.58496,11.80957 c6.26367,0,10.29688-4.6084,10.29688-11.7373V74.58203L121.70996,74.50977z" transform="translate(386.84077 -124.98177)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#0e9594" stroke="#0e9594"/>
+        </g>
+        <g id="path268236" aria-label="^B" transform="translate(0 358.48) translate(529.031945 -50.72799999999999) scale(3) translate(-517.81344 50.4)">
+          <path class="c1" d="M111.08887,98.84766c5.83301,1.22461,9.57715,6.12109,9.57715,12.5293 c0,3.45605-1.15234,6.40918-3.3125,8.64063c-0.93555-16.77734-16.27344-16.34473-16.27344-16.34473h-10.5127v12.45703h10.5127 c3.67285,0,6.26465-1.36816,7.34473-3.67285c4.53613,5.9043,0.86426,12.74512-5.83203,12.74512H79.33398v-50.4043h22.39453 c10.65625,0,17.28125,4.75244,17.28125,12.38477c0,5.18457-3.02441,9.36084-7.9209,10.80127l-2.01563,0.57666l2.01563,0.43164 V98.84766z M107.41699,89.34326c0-3.52832-2.44824-5.76074-6.40918-5.76074h-10.5127v11.66504h10.5127 C104.89648,95.24756,107.41699,92.94336,107.41699,89.34326z" transform="translate(438.47946 -125.19786)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#0e9594" stroke="#0e9594"/>
+        </g>
+      </g>
+      <image id="icon" style="display: none;" x="0" y="0" href=""/>
+    </g>
+  </g>
+</svg>

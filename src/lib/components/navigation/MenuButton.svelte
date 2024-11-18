@@ -42,6 +42,7 @@
 			class="bg-[rgba(246,239,235,0.8)] border rounded-lg border-text font-lig -translate-y-0.5 -z-10"
 		>
 			<div id="menuList" class="py-4 pr-5 pl-8 flex flex-col items-end space-y-3">
+				<img src="images/UB.png" alt="UB" class="w-8 aspect-square"/>
 				<button
 					on:click={() => {
 						goTo('about');
@@ -81,10 +82,9 @@
 		</div>
 	{/if}
 </div>
-<div
-	class="fixed top-6 right-4 flex flex-col items-end z-[60] font-light text-xl max-lg:hidden"
->
+<div class="fixed top-6 right-4 flex flex-col items-end z-[60] font-light text-xl max-lg:hidden">
 	<div id="menuList" class="py-4 pr-5 pl-8 flex flex-col items-end space-y-4">
+		<img src="images/UB.png" alt="UB" class="w-12 aspect-square"/>
 		<button
 			on:click={() => {
 				goTo('about');
