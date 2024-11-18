@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 :root {
-    overscroll-behavior: none;
+	overscroll-behavior: none;
 }

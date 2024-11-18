@@ -25,11 +25,13 @@ Ce site a été développé en utilisant **SvelteKit** et est hébergé sur **Cl
 Pour cloner et déployer ce projet localement :
 
 1. Clonez le dépôt :
+
    ```bash
    git clone https://github.com/ulysse-bouchet/ulysse-bouchet.git
    ```
 
 2. Installez les dépendances :
+
    ```bash
    npm install
    ```

@@ -40,26 +40,26 @@ export default {
 		themes: [
 			{
 				mytheme: {
-					primary: '#6366f1',
-					/*'primary-content': '#030414',*/
-					secondary: '#a855f7',
-					/*'secondary-content': '#0a0215',*/
-					accent: '#ec4899',
-					/*'accent-content': '#130208',*/
-					/*'neutral': '#ff00ff',*/
-					/*'neutral-content': '#160016',*/
+					// primary: '#6366f1',
+					// 'primary-content': '#030414',
+					// secondary: '#a855f7',
+					// 'secondary-content': '#0a0215',
+					// accent: '#ec4899',
+					// 'accent-content': '#130208',
+					// 'neutral': '#ff00ff',
+					// 'neutral-content': '#160016',
 					'base-100': '#f7f5f6'
-					/*'base-200': '#d7d5d6',*/
-					/*'base-300': '#b7b6b7',*/
-					/*'base-content': '#0e0c0d',*/
-					/*'info': '#0000ff',*/
-					/*'info-content': '#c6dbff',*/
-					/*'success': '#00ff00',*/
-					/*'success-content': '#001600',*/
-					/*'warning': '#00ff00',*/
-					/*'warning-content': '#001600',*/
-					/*'error': '#ff0000',*/
-					/*'error-content': '#160000'*/
+					// 'base-200': '#d7d5d6',
+					// 'base-300': '#b7b6b7',
+					// 'base-content': '#0e0c0d',
+					// 'info': '#0000ff',
+					// 'info-content': '#c6dbff',
+					// 'success': '#00ff00',
+					// 'success-content': '#001600',
+					// 'warning': '#00ff00',
+					// 'warning-content': '#001600',
+					// 'error': '#ff0000',
+					// 'error-content': '#160000'
 				}
 			}
 		]
