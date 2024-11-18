@@ -1,4 +1,5 @@
 <script lang="ts">
+	// Imports
 	import { onMount } from 'svelte';
 	import { getScrollDistance } from './navigation';
 
@@ -6,10 +7,11 @@
 	 * Function to handle the custom scrollbar.
 	 */
 	const handleScroll = () => {
-		let scrollbar = document.getElementById('scrollbar') as HTMLElement;
+		let scrollbar: HTMLDivElement = document.getElementById('scrollbar') as HTMLDivElement;
 		scrollbar.style.width = getScrollDistance() + 'vw'; // Set new scrollbar width
 	};
 
+	// Add an event listener to update the custom scrollbar
 	onMount(() => {
 		window.addEventListener('scroll', handleScroll);
 		handleScroll();
@@ -21,12 +23,3 @@
 	class="fixed top-0 left-0 h-1 w-0 bg-gradient-to-r from-primary via-secondary to-accent z-[60] lg:h-2"
 	id="scrollbar"
 ></div>
-
-<!-- Scrollbar with division name, fixed to the bottom -->
-<!--<nav class="sticky bottom-0 h-20 w-full flex flex-col justify-center bg-background">
-	<div class="absolute bottom-full h-[3px] w-0 bg-gradient-to-r from-primary via-secondary to-accent" id="scrollbar"></div>
-	<span
-		class="px-6 font-heading uppercase font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
-		À propos
-	</span>
-</nav>-->
