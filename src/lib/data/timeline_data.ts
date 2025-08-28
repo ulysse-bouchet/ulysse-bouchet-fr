@@ -14,6 +14,35 @@ export type Tag = {
 
 export const career: TimelineElement[] = [
 	{
+		time: '2024 - 2025',
+		logo: 'linagora.png',
+		title: 'LINAGORA',
+		subtitle: 'Développeur Fullstack - CDI',
+		description:
+			"Suite à mes études, j'ai rejoint l'équipe IA de LINAGORA en tant que développeur fullstack. " +
+			"Entouré d'ingénieurs au profil orienté IA & MLOps, j'ai pu travailler sur plusieurs projets liés à ce domaine. " +
+			"J'ai ainsi développé les interfaces web de Lucie Chat, une IA française open source créée par le collectif OpenLLM France, " +
+			'Lucie CS, une plateforme de crowdsourcing pour améliorer cette dernière, ' +
+			"ou encore OpenRAG Admin UI, un dashboard d'administration pour le RAG open source de LINAGORA. " +
+			"Cette expérience m'a permis de gagner en autonomie et en responsabilités, " +
+			"étant l'unique développeur web au sein de l'équipe.",
+		tags: [
+			{ text: 'Lucie', link: 'https://lucie.chat/' },
+			{ text: 'OpenRAG', link: 'https://open-rag.ai/' },
+			{ text: 'OpenLLM France', link: 'https://www.openllm-france.fr/' },
+			{ text: 'React', link: 'https://react.dev/' },
+			{ text: 'Svelte', link: 'https://svelte.dev/' },
+			{ text: 'TailwindCSS', link: 'https://tailwindcss.com/' },
+			{ text: 'TypeScript', link: 'https://www.typescriptlang.org/' },
+			{ text: 'NodeJS', link: 'https://nodejs.org/en' },
+			{ text: 'Docker', link: 'https://storybook.js.org/' },
+			{ text: 'HTML', link: 'https://www.w3schools.com/html/' },
+			{ text: 'CSS', link: 'https://www.w3schools.com/Css/' },
+			{ text: 'Git', link: 'https://git-scm.com/' },
+			{ text: 'GitHub', link: 'https://github.com/' }
+		]
+	},
+	{
 		time: '2022 - 2024',
 		logo: 'cea.png',
 		title: 'CEA Paris-Saclay',

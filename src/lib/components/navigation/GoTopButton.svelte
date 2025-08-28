@@ -39,7 +39,7 @@
 <button
 	id="goTopButton"
 	on:click={goToTop}
-	class="fixed bg-background opacity-80 shadow rounded-lg px-4 py-2 bottom-3 right-1/2 translate-x-1/2 z-[60] lg:right-6 lg:translate-x-0 lg:bottom-6 lg:bg-transparent lg:shadow-none"
+	class="fixed bg-background opacity-80 shadow rounded-lg px-4 py-2 bottom-3 right-1/2 translate-x-1/2 z-[60] lg:right-6 lg:translate-x-0 lg:bottom-6 lg:bg-transparent lg:text-white lg:shadow-none"
 >
 	<div class="flex items-center text-inherit space-x-2">
 		<span> Revenir en haut </span>

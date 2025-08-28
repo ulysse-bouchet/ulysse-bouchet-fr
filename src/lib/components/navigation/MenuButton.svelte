@@ -84,7 +84,7 @@
 	{/if}
 </div>
 <!-- Larger screens (laptop, pc...) version of the menu -->
-<div class="fixed top-6 right-4 flex flex-col items-end z-[60] font-light text-xl max-lg:hidden">
+<div class="fixed top-6 right-4 flex flex-col items-end z-[60] font-light text-white text-xl max-lg:hidden">
 	<div id="menuList" class="py-4 pr-5 pl-8 flex flex-col items-end space-y-4">
 		<img src="images/UB.png" alt="UB" class="w-12 aspect-square" />
 		<button

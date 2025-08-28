@@ -6,7 +6,9 @@
 	import MenuButton from '$lib/components/navigation/MenuButton.svelte';
 </script>
 
-<div class="min-h-screen min-w-screen bg-slate-200 font-body text-base text-text lg:py-8 lg:text-lg">
+<div
+	class="min-h-screen min-w-screen bg-gradient-to-br from-primary via-secondary to-accent bg-fixed font-body text-base text-text lg:py-8 lg:text-lg"
+>
 	<div class="lg:mx-[20vw] xxl:mx-[30vw] lg:shadow-2xl lg:bg-slate-200 lg:rounded-3xl">
 		<ProgressBar />
 		<MenuButton />
