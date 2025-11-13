@@ -31,7 +31,8 @@ export default {
 				bold: '700'
 			},
 			screens: {
-				xxl: { min: '2160px' },
+				'2xl': { min: '2160px' },
+				'3xl':{min:'3000px'},
 				'max-lg': { max: '1023px' }
 			}
 		}

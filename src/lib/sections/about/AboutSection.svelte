@@ -10,7 +10,8 @@
 			class="mt-8 w-2/3 h-2/3 rounded-full aspect-square object-cover shadow-xl
 			border-4 border-l-primary border-t-primary border-r-secondary border-b-secondary
 			lg:w-96 lg:h-96
-			xxl:w-3/5 xxl:h-3/5"
+			2xl:size-3/5
+			3xl:size-1/3"
 		/>
 
 		<!-- Infos -->
